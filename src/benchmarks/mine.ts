@@ -65,7 +65,7 @@ if (!isMainThread) {
 
       for (const i of mineItems) {
         if (items[i]) {
-          if (items[i].id != "cobblestone" && items[i].id != "coal" && items[i].id != "diamond" && items[i].role != "ore")
+          if (!["cobblestone", "coal", "diamond", "amethyst", "emerald"].includes(items[i].id) || items[i].role != "ore")
             continue;
           if (items[i].rarity == 4) {
             const chance = Math.floor(Math.random() * 15);
