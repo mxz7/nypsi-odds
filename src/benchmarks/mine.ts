@@ -75,7 +75,7 @@ if (!isMainThread) {
               }
             }
           } else if (items[i].rarity == 3 && pickaxe != "wooden_pickaxe") {
-            for (let x = 0; x < 10; x++) {
+            for (let x = 0; x < 5; x++) {
               mineItemsModified.push(i);
 
               if (pickaxe == "diamond_pickaxe") mineItemsModified.push(i);
