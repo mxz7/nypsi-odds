@@ -2,7 +2,11 @@
 
 this repo shows results for [nypsi](https://github.com/tekoh/nypsi) (random) crate/fish/mine/hunt odds. results can be found in [./out/](./out/)
 
+up to date as of 21st october 2022
+
 ## results
+
+for each test, it was ran 500,000 times.
 
 [basic crate](./out/basic_crate.txt) (vote&69420 are the same odds)
 
@@ -25,3 +29,11 @@ this repo shows results for [nypsi](https://github.com/tekoh/nypsi) (random) cra
 [iron pickaxe](./out/iron_pickaxe.txt)
 
 [diamond pickaxe](./out/diamond_pickaxe.txt)
+
+## run yourself
+
+1. `git clone https://github.com/tekoh/nypsi-odds`
+2. `cd nypsi-odds`
+3. `npm i`
+4. `npx tsc`
+5. `node dist/index.js`
