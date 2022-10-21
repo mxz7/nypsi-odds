@@ -1,0 +1,5 @@
+diamond: 29.129% (145,644 found)
+iron_ore: 28.922% (144,610 found)
+gold_ore: 21.667% (108,336 found)
+cobblestone: 10.189% (50,946 found)
+coal: 10.093% (50,464 found)

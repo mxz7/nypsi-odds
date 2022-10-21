@@ -1,0 +1,4 @@
+baby_rabbit: 27.898% (139,490 found)
+rat: 27.801% (139,006 found)
+mouse: 27.698% (138,492 found)
+normal_rabbit: 16.602% (83,012 found)
