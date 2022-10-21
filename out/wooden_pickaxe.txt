@@ -1,2 +1,2 @@
-cobblestone: 50.140% (250,698 found)
-coal: 49.860% (249,302 found)
+coal: 50.029% (250,144 found)
+cobblestone: 49.971% (249,856 found)
