@@ -1,4 +1,5 @@
 import { inPlaceSort } from "fast-sort";
+import { readFileSync } from "fs";
 
 const found = new Map<string, number>();
 
@@ -6,9 +7,13 @@ const found = new Map<string, number>();
 export default function crates(amount: number, crate: string) {
   for (let i = 0; i < amount; i++) {
     openCrate(crate);
+
+    if (i % (amount / 10) == 0) {
+      console.log(`${( i / amount * 100).toFixed(1)}% done`)
+    }
   }
 
-  console.log(`${amount.toLocaleString()} crates opened`);
+  console.log(`${amount.toLocaleString()} crates opened [${crate}]`);
   
   let total = 0;
   const itemNames: string[] = []
@@ -26,13 +31,18 @@ export default function crates(amount: number, crate: string) {
 
   inPlaceSort(itemNames).desc(i => percentages.get(i))
 
+  const out: string[] = []
+
   for (const itemId of itemNames) {
-    console.log(`${itemId}: ${percentages.get(itemId)?.toFixed(3)}%`)
+    const str = `${itemId}: ${percentages.get(itemId)?.toFixed(3)}% (${found.get(itemId)?.toLocaleString()} found)`
+    console.log(str)
+    out.push(str)
   }
+
+  return out;
 }
 
-const items = await import("../items.json")
-
+const items: {[key: string]: any} = JSON.parse(readFileSync("./items.json").toString())
 
 export function openCrate(item: string) {
   const crateItems = ["money:50000", "money:100000", "xp:25", "xp:50"];
