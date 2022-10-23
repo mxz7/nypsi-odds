@@ -98,7 +98,7 @@ if (!isMainThread) {
             const chance = Math.floor(Math.random() * 15);
             if (chance == 4 && fishingRod == "incredible_fishing_rod") {
               if (items[i].role == "fish") {
-                for (let x = 0; x < 75; x++) {
+                for (let x = 0; x < 150; x++) {
                   fishItemsModified.push(i);
                 }
               }
@@ -108,7 +108,7 @@ if (!isMainThread) {
             const chance = Math.floor(Math.random() * 3);
             if (chance == 2 && fishingRod != "terrible_fishing_rod") {
               if (items[i].role == "fish") {
-                for (let x = 0; x < 90; x++) {
+                for (let x = 0; x < 180; x++) {
                   fishItemsModified.push(i);
                 }
               }
@@ -116,7 +116,7 @@ if (!isMainThread) {
             }
           } else if (items[i].rarity == 2 && fishingRod != "terrible_fishing_rod") {
             if (items[i].role == "fish") {
-              for (let x = 0; x < 100; x++) {
+              for (let x = 0; x < 200; x++) {
                 fishItemsModified.push(i);
               }
             } else if (items[i].role == "worker-upgrade") {
@@ -130,7 +130,7 @@ if (!isMainThread) {
             }
           } else if (items[i].rarity == 1) {
             if (items[i].role == "fish") {
-              for (let x = 0; x < 140; x++) {
+              for (let x = 0; x < 280; x++) {
                 fishItemsModified.push(i);
               }
             } else if (items[i].role == "worker-upgrade") {
@@ -148,7 +148,7 @@ if (!isMainThread) {
             }
           } else if (items[i].rarity == 0 && fishingRod != "incredible_fishing_rod") {
             if (items[i].role == "fish") {
-              for (let x = 0; x < 200; x++) {
+              for (let x = 0; x < 400; x++) {
                 fishItemsModified.push(i);
               }
             } else {
