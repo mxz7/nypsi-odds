@@ -54,7 +54,16 @@ if (!isMainThread) {
   function openCrate(pickaxe: string) {
     const mineItems = Array.from(Object.keys(items));
 
-    const areas = ["cave", "strip mine", "1x1 hole you dug", "staircase to bedrock", "nether", "nether", "nether"];
+    const areas = [
+      "cave",
+      "mineshaft",
+      "strip mine",
+      "1x1 hole you dug",
+      "staircase to bedrock",
+      "nether",
+      "nether",
+      "nether",
+    ];
 
     const chosenArea = areas[Math.floor(Math.random() * areas.length)];
 
@@ -73,11 +82,21 @@ if (!isMainThread) {
             if (!["netherrack", "ancient_debris", "quartz", "gold_nugget"].includes(items[i].id)) continue;
           } else {
             if (
-              !["cobblestone", "coal", "diamond", "amethyst", "emerald", "iron_ore", "gold_ore", "obsidian"].includes(
-                items[i].id
-              )
+              ![
+                "cobblestone",
+                "coal",
+                "diamond",
+                "amethyst",
+                "emerald",
+                "iron_ore",
+                "gold_ore",
+                "obsidian",
+                "mineshaft_chest",
+              ].includes(items[i].id)
             )
               continue;
+
+            if (items[i].id == "mineshaft_chest" && chosenArea != "mineshaft") continue;
           }
 
           if (items[i].id == "ancient_debris") {
@@ -95,11 +114,19 @@ if (!isMainThread) {
                 mineItemsModified.push(i);
               }
             }
-          } else if (items[i].rarity == 3 && pickaxe != "wooden_pickaxe") {
-            for (let x = 0; x < 10; x++) {
-              mineItemsModified.push(i);
+          } else if (items[i].rarity == 3) {
+            if (pickaxe == "wooden_pickaxe" && items[i].id != "mineshaft_chest") continue;
 
-              if (pickaxe == "diamond_pickaxe") mineItemsModified.push(i);
+            if (pickaxe == "wooden_pickaxe") {
+              for (let x = 0; x < 5; x++) {
+                mineItemsModified.push(i);
+              }
+            } else {
+              for (let x = 0; x < 10; x++) {
+                mineItemsModified.push(i);
+
+                if (pickaxe == "diamond_pickaxe") mineItemsModified.push(i);
+              }
             }
           } else if (items[i].rarity == 2 && pickaxe != "wooden_pickaxe") {
             for (let x = 0; x < 15; x++) {
