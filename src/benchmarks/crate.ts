@@ -55,25 +55,18 @@ if (!isMainThread) {
     const crateItems = ["money:50000", "money:100000", "xp:25", "xp:50"];
 
     for (const i of Array.from(Object.keys(items))) {
-      if (
-        items[i].role == "fish" ||
-        items[i].role == "prey" ||
-        items[i].id == "gold_ore" ||
-        items[i].id == "iron_ore" ||
-        items[i].id == "cobblestone"
-      )
-        continue;
+      if (!items[i].in_crates) continue;
       crateItems.push(i);
     }
 
     let times = 1;
 
     for (let i = 0; i < times; i++) {
-      const crateItemsModified: string[] = [];
+      const crateItemsModified = [];
 
       for (const i of crateItems) {
         if (items[i]) {
-          if (items[item].id == "nypsi_crate" && ["collectable", "sellable", "item", "car"].includes(items[i].role)) {
+          if (items[i].id == "nypsi_crate" && ["collectable", "sellable", "item", "car"].includes(items[i].role)) {
             const chance = Math.floor(Math.random() * 7);
 
             if (chance != 2) continue;
@@ -87,7 +80,7 @@ if (!isMainThread) {
             const chance = Math.floor(Math.random() * 15);
             if (chance == 4) {
               crateItemsModified.push(i);
-            } else if (chance > 7 && items[item].id == "nypsi_crate") {
+            } else if (chance > 7 && items[i].id == "nypsi_crate") {
               for (let x = 0; x < 3; x++) {
                 crateItemsModified.push(i);
               }
@@ -96,13 +89,13 @@ if (!isMainThread) {
             const chance = Math.floor(Math.random() * 3);
             if (chance == 2) {
               crateItemsModified.push(i);
-            } else if (items[item].id == "nypsi_crate") {
+            } else if (items[i].id == "nypsi_crate") {
               for (let x = 0; x < 3; x++) {
                 crateItemsModified.push(i);
               }
             }
           } else if (items[i].rarity == 2) {
-            if (items[item].id == "nypsi_crate") {
+            if (items[i].id == "nypsi_crate") {
               for (let x = 0; x < 5; x++) {
                 crateItemsModified.push(i);
               }
@@ -110,14 +103,14 @@ if (!isMainThread) {
             crateItemsModified.push(i);
           } else if (items[i].rarity == 1) {
             for (let x = 0; x < 2; x++) {
-              if (items[i].role == "collectable" && items[item].id != "nypsi_crate") {
+              if (items[i].role == "collectable" && items[i].id != "nypsi_crate") {
                 const chance = Math.floor(Math.random() * 3);
 
                 if (chance == 2) {
                   crateItemsModified.push(i);
                 }
               } else {
-                if (items[item].id == "nypsi_crate") {
+                if (items[i].id == "nypsi_crate") {
                   const chance = Math.floor(Math.random() * 10);
 
                   if (chance < 7) {
@@ -129,7 +122,7 @@ if (!isMainThread) {
               }
               crateItemsModified.push(i);
             }
-          } else if (items[i].rarity == 0 && items[item].id != "nypsi_crate") {
+          } else if (items[i].rarity == 0 && items[i].id != "nypsi_crate") {
             if (items[i].role == "collectable") {
               const chance = Math.floor(Math.random() * 3);
 
@@ -142,7 +135,7 @@ if (!isMainThread) {
             crateItemsModified.push(i);
           }
         } else {
-          if (items[item].id == "nypsi_crate") {
+          if (items[i].id == "nypsi_crate") {
             for (let x = 0; x < 6; x++) {
               crateItemsModified.push("money:10000000");
               crateItemsModified.push("xp:750");
