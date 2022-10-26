@@ -78,12 +78,24 @@ if (!isMainThread) {
       if (items[i].role == "tool") continue;
       if (items[i].role == "car") continue;
       if (items[i].role == "booster") continue;
-      if (items[i].id == "cobblestone") continue;
-      if (items[i].id == "iron_ore") continue;
-      if (items[i].id == "gold_ore") continue;
-      if (items[i].id == "coal") continue;
-      if (items[i].id == "iron_ingot") continue;
-      if (items[i].id == "gold_ingot") continue;
+
+      if (
+        [
+          "cobblestone",
+          "iron_ore",
+          "gold_ore",
+          "coal",
+          "iron_ingot",
+          "gold_ingot",
+          "obsidian",
+          "netherrack",
+          "quartz",
+          "ancient_debris",
+          "netherite_scrap",
+          "netherite_ingot",
+        ].includes(items[i].id)
+      )
+        continue;
       fishItems.push(i);
     }
 
