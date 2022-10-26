@@ -51,12 +51,12 @@ if (!isMainThread) {
 
   const items: { [key: string]: any } = JSON.parse(readFileSync("./items.json").toString());
 
-  const areas = ["cave", "strip mine", "1x1 hole you dug", "staircase to bedrock", "nether", "nether", "nether"];
-
-  const chosenArea = areas[Math.floor(Math.random() * areas.length)];
-
   function openCrate(pickaxe: string) {
     const mineItems = Array.from(Object.keys(items));
+
+    const areas = ["cave", "strip mine", "1x1 hole you dug", "staircase to bedrock", "nether", "nether", "nether"];
+
+    const chosenArea = areas[Math.floor(Math.random() * areas.length)];
 
     const times = 1;
 
