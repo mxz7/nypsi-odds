@@ -51,6 +51,10 @@ if (!isMainThread) {
 
   const items: { [key: string]: any } = JSON.parse(readFileSync("./items.json").toString());
 
+  const areas = ["cave", "strip mine", "1x1 hole you dug", "staircase to bedrock", "nether", "nether", "nether"];
+
+  const chosenArea = areas[Math.floor(Math.random() * areas.length)];
+
   function openCrate(pickaxe: string) {
     const mineItems = Array.from(Object.keys(items));
 
@@ -65,17 +69,28 @@ if (!isMainThread) {
 
       for (const i of mineItems) {
         if (items[i]) {
-          if (!["cobblestone", "coal", "diamond", "amethyst", "emerald"].includes(items[i].id) && items[i].role != "ore")
-            continue;
+          if (chosenArea == "nether") {
+            if (!["netherrack", "ancient_debris", "quartz", "gold_nugget"].includes(items[i].id)) continue;
+          } else {
+            if (
+              !["cobblestone", "coal", "diamond", "amethyst", "emerald", "iron_ore", "gold_ore", "obsidian"].includes(
+                items[i].id
+              )
+            )
+              continue;
+          }
+
+          if (items[i].id == "ancient_debris" && pickaxe != "diamond_pickaxe") continue;
+
           if (items[i].rarity == 4) {
-            const chance = Math.floor(Math.random() * 15);
-            if (chance == 4 && pickaxe == "diamond_pickaxe") {
-              for (let x = 0; x < 10; x++) {
+            const chance = Math.floor(Math.random() * 3);
+            if (chance == 1 && pickaxe == "diamond_pickaxe") {
+              for (let x = 0; x < 5; x++) {
                 mineItemsModified.push(i);
               }
             }
           } else if (items[i].rarity == 3 && pickaxe != "wooden_pickaxe") {
-            for (let x = 0; x < 5; x++) {
+            for (let x = 0; x < 10; x++) {
               mineItemsModified.push(i);
 
               if (pickaxe == "diamond_pickaxe") mineItemsModified.push(i);
@@ -89,12 +104,12 @@ if (!isMainThread) {
               mineItemsModified.push(i);
             }
           } else if (items[i].rarity == 0) {
-            if (pickaxe == "diamond_pickaxe") {
+            if (pickaxe == "diamond_pickaxe" && chosenArea != "nether") {
               for (let x = 0; x < 7; x++) {
                 mineItemsModified.push(i);
               }
             } else {
-              for (let x = 0; x < 20; x++) {
+              for (let x = 0; x < 50; x++) {
                 mineItemsModified.push(i);
               }
             }
