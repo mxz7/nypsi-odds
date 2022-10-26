@@ -1,3 +1,4 @@
-netherrack: 42.831% (214,156 found)
-coal: 28.638% (143,192 found)
-cobblestone: 28.530% (142,652 found)
+netherrack: 37.505% (187,527 found)
+cobblestone: 30.989% (154,944 found)
+coal: 30.900% (154,499 found)
+mineshaft_chest: 0.606% (3,030 found)
