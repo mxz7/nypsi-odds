@@ -1,2 +1,1 @@
-cobblestone: 50.063% (250,314 found)
-coal: 49.937% (249,686 found)
+netherrack: 100.000% (500,000 found)
