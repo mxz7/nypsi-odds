@@ -65,8 +65,6 @@ if (!isMainThread) {
       const crateItemsModified = [];
 
       for (const i of crateItems) {
-        console.log(i);
-        console.log(items[i]);
         if (items[i]) {
           if (item == "nypsi_crate" && ["collectable", "sellable", "item", "car"].includes(items[i].role)) {
             const chance = Math.floor(Math.random() * 7);
