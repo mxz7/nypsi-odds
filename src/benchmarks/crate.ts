@@ -66,10 +66,15 @@ if (!isMainThread) {
 
       for (const i of crateItems) {
         if (items[i]) {
-          if (item == "nypsi_crate" && ["collectable", "sellable", "item", "car"].includes(items[i].role)) {
-            const chance = Math.floor(Math.random() * 7);
+          if (items[i]) {
+            if (
+              item == "nypsi_crate" &&
+              (["collectable", "sellable", "item", "car"].includes(items[i].role) || items[i].buy)
+            ) {
+              const chance = Math.floor(Math.random() * 7);
 
-            if (chance != 2) continue;
+              if (chance != 2) continue;
+            }
           }
 
           if (items[i].rarity == 5) {
