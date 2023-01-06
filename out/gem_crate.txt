@@ -1,0 +1,6 @@
+blue_gem: 70.123% (350,615 found)
+green_gem: 17.564% (87,821 found)
+pink_gem: 5.198% (25,991 found)
+purple_gem: 5.114% (25,570 found)
+crystal_heart: 1.006% (5,028 found)
+white_gem: 0.995% (4,975 found)

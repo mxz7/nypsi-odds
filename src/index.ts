@@ -54,8 +54,13 @@ async function doMine(crate: string) {
   console.log(`finished: ${crate}`);
 }
 
+promises.push(doCrate("vote_crate"));
 promises.push(doCrate("basic_crate"));
 promises.push(doCrate("nypsi_crate"));
+promises.push(doCrate("mineshaft_chest"));
+promises.push(doCrate("workers_crate"));
+promises.push(doCrate("boosters_crate"));
+promises.push(doCrate("gem_crate"));
 promises.push(doFish("terrible_fishing_rod"));
 promises.push(doFish("fishing_rod"));
 promises.push(doFish("incredible_fishing_rod"));

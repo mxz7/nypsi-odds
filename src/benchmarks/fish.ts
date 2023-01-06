@@ -1,6 +1,7 @@
 import { inPlaceSort } from "fast-sort";
 import { readFileSync } from "fs";
 import { isMainThread, parentPort, Worker, workerData } from "worker_threads";
+import percentChance from "../utils/percentChance";
 
 const found = new Map<string, number>();
 
@@ -78,6 +79,9 @@ if (!isMainThread) {
       if (items[i].role == "tool") continue;
       if (items[i].role == "car") continue;
       if (items[i].role == "booster") continue;
+      if (items[i].id == "crystal_heart") continue;
+      if (items[i].role == "crate" && !percentChance(20)) continue;
+      if (items[i].id.includes("gem") && !percentChance(0.77)) continue;
 
       if (
         [
@@ -102,7 +106,7 @@ if (!isMainThread) {
     let times = 1;
 
     for (let i = 0; i < times; i++) {
-      const fishItemsModified: string[] = [];
+      const fishItemsModified = [];
 
       for (const i of fishItems) {
         if (items[i]) {
