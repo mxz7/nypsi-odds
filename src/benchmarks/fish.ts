@@ -101,6 +101,8 @@ if (!isMainThread) {
       )
         continue;
       fishItems.push(i);
+
+      if (items[i].role === "fish") fishItems.push(i);
     }
 
     let times = 1;
