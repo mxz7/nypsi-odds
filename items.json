@@ -985,6 +985,25 @@
     },
     "in_crates": true
   },
+  "extended_mag": {
+    "id": "extended_mag",
+    "name": "extended magazine",
+    "plural": "extended magazines",
+    "emoji": "<:nypsi_extendedmag:1089515476922683495>",
+    "longDesc": "increased luck when hunting",
+    "aliases": ["mag"],
+    "rarity": 0,
+    "role": "booster",
+    "buy": 45000,
+    "sell": 25000,
+    "stackable": false,
+    "boosterEffect": {
+      "boosts": ["hunt"],
+      "effect": 1,
+      "time": 3600
+    },
+    "in_crates": true
+  },
   "multi_potion": {
     "id": "multi_potion",
     "name": "multiplier potion",
@@ -1126,7 +1145,7 @@
   "blue_rocks": {
     "id": "blue_rocks",
     "name": "blue rocks",
-    "aliases": ["blue", "meth", "C10H15N"],
+    "aliases": ["meth", "C10H15N"],
     "emoji": "<:nypsi_bluerock:1003408529954177144>",
     "longDesc": "https://youtu.be/Dbt-OfbQTpw?t=28",
     "rarity": 0,
@@ -1170,7 +1189,7 @@
     "boosterEffect": {
       "boosts": ["multi"],
       "effect": 5,
-      "time": 7200
+      "time": 3600
     },
     "in_crates": false
   },
@@ -1604,7 +1623,7 @@
       "id:bronze_credit:6",
       "id:silver_credit:2",
       "id:gold_credit:2",
-      "id:gem_shard:10",
+      "id:gem_shard:7",
       "id:green_gem:3",
       "id:blue_gem:3",
       "id:purple_gem:2",
@@ -1669,8 +1688,7 @@
       "id:gold_credit:3",
       "id:platinum_credit:1",
       "id:pink_gem:1",
-      "id:gem_shard:15",
-      "id:quarry_scrap:15"
+      "id:gem_shard:15"
     ]
   },
   "corner_shop_scratchie": {
@@ -1683,21 +1701,19 @@
     "aliases": ["cscratch", "cscratchie", "cornershop"],
     "rarity": 69,
     "in_crates": false,
-    "buy": 600000,
-    "sell": 100000,
+    "buy": 300000,
+    "sell": 50000,
     "clicks": 4,
     "items": [
-      "money:250000",
+      "money:300000",
       "xp:100",
       "id:lawyer",
       "id:cake",
       "id:diamond",
       "id:cookie",
-      "id:bitcoin",
-      "id:ethereum",
       "id:worm",
       "id:blue_rocks:65",
-      "karma:15:60",
+      "karma:15:85",
       "id:ancient_debris:60",
       "id:stolen_credit_card:90",
       "id:grandma:20",
@@ -1714,7 +1730,7 @@
       "id:boosters_crate:3",
       "id:bronze_credit:0.2",
       "id:purple_gem:0.1",
-      "id:quarry_scrap:1"
+      "id:quarry_scrap:3"
     ]
   },
   "bob": {
@@ -1737,7 +1753,7 @@
     "longDesc": "gem shards have no known powers unlike intact shards, however, it is known that when you put enough gem shards together they will reliably form into full shards, if you're lucky...",
     "role": "item",
     "aliases": ["shard", "shards"],
-    "rarity": 2,
+    "rarity": 69,
     "buy": 0,
     "sell": 500000,
     "in_crates": false
@@ -1750,7 +1766,7 @@
     "emoji": "🪨",
     "longDesc": "rarely found from your quarry, can be crafted into quarry upgrades",
     "role": "item",
-    "rarity": 1,
+    "rarity": 69,
     "buy": 0,
     "sell": 1000000,
     "in_crates": false
@@ -1763,7 +1779,7 @@
     "emoji": "📡",
     "longDesc": "increase chance of finding gem shards from your quarry",
     "role": "worker-upgrade",
-    "rarity": 3,
+    "rarity": 4,
     "buy": 0,
     "sell": 1000000,
     "in_crates": false,
@@ -1781,7 +1797,7 @@
     "emoji": "📟",
     "longDesc": "increase chance of finding quarry scraps from your quarry",
     "role": "worker-upgrade",
-    "rarity": 3,
+    "rarity": 4,
     "buy": 0,
     "sell": 1000000,
     "in_crates": false,
