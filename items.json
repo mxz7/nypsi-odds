@@ -2,106 +2,125 @@
   "small_fish": {
     "id": "small_fish",
     "name": "small fish",
+    "article": "a",
+    "plural": "small fish",
     "emoji": "🐟",
     "longDesc": "commonly found while fishing",
     "role": "fish",
     "rarity": 0,
     "buy": 0,
-    "sell": 7500,
+    "sell": 3500,
     "in_crates": false
   },
   "medium_fish": {
     "id": "medium_fish",
     "name": "medium fish",
+    "article": "a",
+    "plural": "medium fish",
     "emoji": "🐠",
     "longDesc": "not as common as the small fish",
     "role": "fish",
     "rarity": 1,
     "buy": 0,
-    "sell": 15000,
+    "sell": 10000,
     "in_crates": false
   },
   "salmon": {
     "id": "salmon",
     "name": "salmon",
+    "article": "a",
+    "plural": "salmon",
     "emoji": "<:nypsi_salmon:1032766920476336148>",
     "longDesc": "😋",
     "role": "fish",
     "rarity": 1,
     "buy": 0,
-    "sell": 25000,
+    "sell": 12500,
     "in_crates": false
   },
   "pufferfish": {
     "id": "pufferfish",
     "name": "pufferfish",
+    "article": "a",
+    "plural": "pufferfish",
     "emoji": "<:nypsi_pufferfish:1032767867625668708>",
     "longDesc": "be very careful !!",
     "role": "fish",
     "rarity": 1,
     "buy": 0,
-    "sell": 30000,
+    "sell": 12500,
     "in_crates": false
   },
   "large_fish": {
     "id": "large_fish",
     "name": "large fish",
+    "article": "a",
+    "plural": "large fish",
     "emoji": "🦈",
     "longDesc": "maybe it'll give you a hug",
     "role": "fish",
     "rarity": 2,
     "buy": 0,
-    "sell": 35000,
+    "sell": 17500,
     "in_crates": false
   },
   "nemo": {
     "id": "nemo",
     "name": "nemo",
+    "article": "a",
+    "plural": "nemos",
     "emoji": "<:nypsi_nemo:1032768399928987668>",
     "longDesc": "just keep swimming.. just keep swimming..",
     "role": "fish",
     "rarity": 3,
     "buy": 0,
-    "sell": 50000,
+    "sell": 23500,
     "in_crates": false
   },
   "cobblestone": {
     "id": "cobblestone",
     "name": "cobblestone",
+    "article": "a",
+    "plural": "cobblestone",
     "emoji": "<:nypsi_cobblestone:959445739673616484>",
     "longDesc": "found when mining",
     "role": "sellable",
     "rarity": 0,
     "aliases": ["cobble"],
     "buy": 0,
-    "sell": 1000,
+    "sell": 450,
     "in_crates": false
   },
   "netherrack": {
     "id": "netherrack",
     "name": "netherrack",
+    "article": "a",
+    "plural": "netherrack",
     "emoji": "<:nypsi_netherrack:1034510405101432963>",
     "longDesc": "found when mining in the nether",
     "role": "sellable",
     "rarity": 0,
     "buy": 0,
-    "sell": 6000,
+    "sell": 900,
     "in_crates": false
   },
   "coal": {
     "id": "coal",
     "name": "coal",
+    "article": "a",
+    "plural": "coal",
     "emoji": "<:nypsi_coal:959442471388082176>",
     "longDesc": "can be used to smelt 1 ore in a furnace",
     "role": "fuel",
     "rarity": 0,
     "buy": 3000,
-    "sell": 2000,
+    "sell": 1500,
     "in_crates": false
   },
   "iron_ingot": {
     "id": "iron_ingot",
     "name": "iron ingot",
+    "article": "an",
     "plural": "iron ingots",
     "emoji": "<:nypsi_iron:959442548064141362>",
     "longDesc": "product of smelting iron ore",
@@ -109,12 +128,13 @@
     "rarity": 69,
     "aliases": ["iron"],
     "buy": 0,
-    "sell": 15000,
+    "sell": 20000,
     "in_crates": false
   },
   "gold_ingot": {
     "id": "gold_ingot",
     "name": "gold ingot",
+    "article": "a",
     "plural": "gold ingots",
     "emoji": "<:nypsi_gold:959443010205126656>",
     "longDesc": "product of smelting gold ore",
@@ -122,28 +142,31 @@
     "rarity": 69,
     "aliases": ["gold"],
     "buy": 0,
-    "sell": 20000,
+    "sell": 33000,
     "in_crates": false,
     "craft": {
-      "ingrediants": ["gold_nugget:9"],
-      "time": 60
+      "ingredients": ["gold_nugget:9"],
+      "time": 180
     }
   },
   "diamond": {
     "id": "diamond",
     "name": "diamond",
+    "article": "a",
     "plural": "diamonds",
     "emoji": "<:nypsi_diamond:959443043377897502>",
     "longDesc": "found when mining",
     "role": "sellable",
     "rarity": 3,
     "buy": 0,
-    "sell": 50000,
+    "sell": 60000,
     "in_crates": false
   },
   "obsidian": {
     "id": "obsidian",
     "name": "obsidian",
+    "article": "an",
+    "plural": "obsidian",
     "emoji": "<:nypsi_obsidian:1034510054008823849>",
     "longDesc": "found when mining and used to craft a nether portal",
     "role": "resource",
@@ -155,18 +178,20 @@
   "emerald": {
     "id": "emerald",
     "name": "emerald",
+    "article": "an",
     "plural": "emeralds",
     "emoji": "<:nypsi_emerald:1017420625880551434>",
     "longDesc": "found when mining",
     "role": "sellable",
     "rarity": 3,
     "buy": 0,
-    "sell": 75000,
+    "sell": 70000,
     "in_crates": false
   },
   "amethyst": {
     "id": "amethyst",
     "name": "amethyst",
+    "article": "an",
     "plural": "amethysts",
     "emoji": "<:nypsi_amethyst:1032257888699297872>",
     "longDesc": "found when mining",
@@ -179,6 +204,7 @@
   "furnace": {
     "id": "furnace",
     "name": "furnace",
+    "article": "a",
     "plural": "furnaces",
     "emoji": "<:nypsi_furnace:959445132585869373>",
     "longDesc": "used to smelt ore",
@@ -191,6 +217,8 @@
   "iron_ore": {
     "id": "iron_ore",
     "name": "iron ore",
+    "article": "an",
+    "plural": "iron ore",
     "emoji": "<:nypsi_iron_ore:959444539435778078>",
     "longDesc": "can be smelted into an iron ingot with a furnace and coal",
     "role": "ore",
@@ -204,6 +232,8 @@
     "id": "gold_nugget",
     "name": "gold nugget",
     "aliases": ["nugget"],
+    "article": "a",
+    "plural": "gold nuggets",
     "emoji": "<:nypsi_goldn:1034512597153742898>",
     "longDesc": "can be crafted into a gold ingot or sold as is",
     "role": "sellable",
@@ -215,17 +245,21 @@
   "quartz": {
     "id": "quartz",
     "name": "quartz",
+    "plural": "quartz",
+    "article": "a",
     "emoji": "<:nypsi_quartz:1034514057455222875>",
     "longDesc": "found when mining in the nether",
     "role": "sellable",
     "rarity": 1,
     "buy": 0,
-    "sell": 5000,
+    "sell": 17500,
     "in_crates": false
   },
   "gold_ore": {
     "id": "gold_ore",
     "name": "gold ore",
+    "article": "a",
+    "plural": "gold ore",
     "emoji": "<:nypsi_gold_ore:959444923139121223>",
     "longDesc": "can be smelted into a gold ingot with a furnace and coal",
     "role": "ore",
@@ -238,6 +272,8 @@
   "ancient_debris": {
     "id": "ancient_debris",
     "name": "ancient debris",
+    "plural": "ancient debris",
+    "article": "an",
     "aliases": ["debris", "ancient"],
     "emoji": "<:nypsi_ancient_debris:1032256372068335647>",
     "longDesc": "can be smelted into a netherite scrap with a furnace and coal",
@@ -251,6 +287,8 @@
   "netherite_scrap": {
     "id": "netherite_scrap",
     "name": "netherite scrap",
+    "article": "a",
+    "plural": "netherite scrap",
     "emoji": "<:nypsi_nscrap:1034591769662341170>",
     "longDesc": "can be crafted into a netherite ingot",
     "role": "resource",
@@ -262,35 +300,43 @@
   "netherite_ingot": {
     "id": "netherite_ingot",
     "name": "netherite ingot",
+    "article": "a",
+    "plural": "netherite ingots",
     "aliases": ["netherite"],
     "emoji": "<:nypsi_ningot:1034591922473418792>",
     "longDesc": "crafted from netherite scraps and gold ingots",
     "role": "sellable",
     "rarity": 69,
     "buy": 0,
-    "sell": 1500000,
+    "sell": 3000000,
     "craft": {
-      "time": 600,
-      "ingrediants": ["netherite_scrap:4", "gold_ingot:4"]
+      "time": 1200,
+      "ingredients": ["netherite_scrap:4", "gold_ingot:4"]
     },
     "in_crates": false
   },
   "wooden_pickaxe": {
     "id": "wooden_pickaxe",
     "name": "wooden pickaxe",
+    "article": "a",
+    "plural": "wooden pickaxes",
     "emoji": "<:nypsi_wood_pickaxe:959441224731852850>",
     "longDesc": "allows you to mine",
+    "aliases": ["wpickaxe", "wpick"],
     "role": "tool",
     "rarity": 0,
-    "buy": 0,
+    "buy": 30000,
     "sell": 5000,
     "in_crates": true
   },
   "iron_pickaxe": {
     "id": "iron_pickaxe",
     "name": "iron pickaxe",
+    "article": "an",
+    "plural": "iron pickaxes",
     "emoji": "<:nypsi_iron_pickaxe:959441877956960326>",
     "longDesc": "allows you to mine",
+    "aliases": ["ironpick", "ipick"],
     "role": "tool",
     "rarity": 1,
     "buy": 0,
@@ -300,30 +346,40 @@
   "diamond_pickaxe": {
     "id": "diamond_pickaxe",
     "name": "diamond pickaxe",
+    "article": "a",
+    "plural": "diamond pickaxes",
     "emoji": "<:nypsi_diamond_pickaxe:959442215736844368>",
     "longDesc": "allows you to mine",
+    "aliases": ["diamondpick", "dpick"],
     "role": "tool",
     "rarity": 2,
     "buy": 0,
     "sell": 10000,
-    "in_crates": true
+    "in_crates": true,
+    "random_drop_chance": 70
   },
   "terrible_fishing_rod": {
     "id": "terrible_fishing_rod",
     "name": "terrible fishing rod",
+    "article": "a",
+    "plural": "terrible fishing rods",
     "emoji": "🎣",
     "longDesc": "allows you to fish",
+    "aliases": ["tfishing", "tfish"],
     "role": "tool",
     "rarity": 0,
-    "buy": 0,
+    "buy": 30000,
     "sell": 5000,
     "in_crates": true
   },
   "fishing_rod": {
     "id": "fishing_rod",
     "name": "fishing rod",
+    "article": "a",
+    "plural": "fishing rods",
     "emoji": "🎣",
     "longDesc": "allows you to fish with better luck",
+    "aliases": ["fishing"],
     "role": "tool",
     "rarity": 1,
     "buy": 0,
@@ -333,17 +389,23 @@
   "incredible_fishing_rod": {
     "id": "incredible_fishing_rod",
     "name": "incredible fishing rod",
+    "article": "an",
+    "plural": "incredible fishing rods",
     "emoji": "🎣",
     "longDesc": "allows you to fish with amazing luck",
+    "aliases": ["ifishing", "ifish"],
     "role": "tool",
     "rarity": 2,
     "buy": 0,
     "sell": 10000,
-    "in_crates": true
+    "in_crates": true,
+    "random_drop_chance": 70
   },
   "bitcoin": {
     "id": "bitcoin",
     "name": "bitcoin",
+    "article": "a",
+    "plural": "bitcoin",
     "emoji": "<:nypsi_btc:1016409538020261908>",
     "longDesc": "a scary investment (actually matches the worth of bitcoin in real life)",
     "rarity": 0,
@@ -354,6 +416,8 @@
   "ethereum": {
     "id": "ethereum",
     "name": "ethereum",
+    "article": "an",
+    "plural": "ethereum",
     "emoji": "<:nypsi_eth:1016409812067696691>",
     "longDesc": "less scary investment (actually matches the worth of ethereum in real life)",
     "rarity": 0,
@@ -364,18 +428,21 @@
   "terrible_gun": {
     "id": "terrible_gun",
     "name": "terrible gun",
+    "article": "a",
     "plural": "terrible guns",
     "emoji": "🔫",
     "longDesc": "allows you to hunt",
+    "aliases": ["tgun"],
     "role": "tool",
     "rarity": 0,
-    "buy": 0,
+    "buy": 30000,
     "sell": 5000,
     "in_crates": true
   },
   "gun": {
     "id": "gun",
     "name": "gun",
+    "article": "a",
     "plural": "guns",
     "emoji": "🔫",
     "longDesc": "allows you to hunt with better luck",
@@ -388,136 +455,228 @@
   "incredible_gun": {
     "id": "incredible_gun",
     "name": "incredible gun",
+    "article": "an",
     "plural": "incredible guns",
     "emoji": "🔫",
     "longDesc": "allows you to hunt with amazing luck",
+    "aliases": ["igun", "ak47"],
     "role": "tool",
     "rarity": 2,
     "buy": 0,
     "sell": 10000,
-    "in_crates": true
+    "in_crates": true,
+    "random_drop_chance": 70
   },
   "baby_rabbit": {
     "id": "baby_rabbit",
     "name": "baby rabbit",
+    "article": "a",
     "plural": "baby rabbits",
     "emoji": "🐰",
     "longDesc": "tiny small baby rabbit, ur cat could kill this",
     "role": "prey",
     "rarity": 0,
     "buy": 0,
-    "sell": 5000,
+    "sell": 2500,
     "in_crates": false
   },
   "normal_rabbit": {
     "id": "normal_rabbit",
     "name": "normal rabbit",
+    "article": "a",
     "plural": "normal rabbits",
     "emoji": "🐰",
     "longDesc": "jumps around in ur garden",
     "role": "prey",
     "rarity": 1,
     "buy": 0,
-    "sell": 7500,
+    "sell": 5000,
     "in_crates": false
   },
   "large_rabbit": {
     "id": "large_rabbit",
     "name": "large rabbit",
+    "article": "a",
     "plural": "large rabbits",
     "emoji": "🐰",
     "longDesc": "massive fuck off rabbit like a bear",
     "role": "prey",
     "rarity": 2,
     "buy": 0,
-    "sell": 15000,
+    "sell": 7500,
     "in_crates": false
   },
   "deer": {
     "id": "deer",
     "name": "deer",
+    "article": "a",
+    "plural": "deer",
     "emoji": "🦌",
-    "longDesc": "not one of santa's.. anymore atleast",
+    "longDesc": "not one of santa's.. anymore at least",
     "role": "prey",
     "rarity": 2,
     "buy": 0,
-    "sell": 50000,
+    "sell": 10000,
+    "in_crates": false
+  },
+  "llama": {
+    "id": "llama",
+    "name": "llama",
+    "article": "a",
+    "plural": "llamas",
+    "emoji": "🦙",
+    "longDesc": "cant spit anymore can it. how could you.",
+    "role": "prey",
+    "rarity": 2,
+    "buy": 0,
+    "sell": 12500,
+    "in_crates": false
+  },
+  "monkey": {
+    "id": "monkey",
+    "name": "monkey",
+    "article": "a",
+    "plural": "monkeys",
+    "aliases": ["monke"],
+    "emoji": "🦧",
+    "longDesc": "meeeee and my monkey... monkey doesnt wear any pants",
+    "role": "prey",
+    "rarity": 2,
+    "buy": 0,
+    "sell": 12500,
+    "in_crates": false
+  },
+  "harambe": {
+    "id": "harambe",
+    "name": "harambe",
+    "article": "a",
+    "plural": "harambes",
+    "emoji": "🦍",
+    "longDesc": "he was innocent ):",
+    "role": "prey",
+    "rarity": 3,
+    "buy": 0,
+    "sell": 20000,
+    "in_crates": false
+  },
+  "giraffe": {
+    "id": "giraffe",
+    "name": "giraffe",
+    "article": "a",
+    "plural": "giraffes",
+    "emoji": "🦒",
+    "longDesc": "its just a giraffe lol",
+    "role": "prey",
+    "rarity": 3,
+    "buy": 0,
+    "sell": 25000,
+    "in_crates": false
+  },
+  "lion": {
+    "id": "lion",
+    "name": "lion",
+    "article": "a",
+    "plural": "lions",
+    "emoji": "🦁",
+    "longDesc": "rawr",
+    "role": "prey",
+    "rarity": 4,
+    "buy": 0,
+    "sell": 250000,
+    "in_crates": false
+  },
+  "panda": {
+    "id": "panda",
+    "name": "panda",
+    "article": "a",
+    "plural": "pandas",
+    "emoji": "🐼",
+    "longDesc": "useless and stupid but adorable",
+    "role": "prey",
+    "rarity": 3,
+    "buy": 0,
+    "sell": 25000,
     "in_crates": false
   },
   "rat": {
     "id": "rat",
     "name": "rat",
+    "article": "a",
     "plural": "rats",
     "emoji": "🐀",
     "longDesc": "https://youtu.be/1hhl9kFTuQ8?t=19",
     "role": "prey",
     "rarity": 0,
     "buy": 0,
-    "sell": 3000,
+    "sell": 1500,
     "in_crates": false
   },
   "mouse": {
     "id": "mouse",
     "name": "mouse",
+    "article": "a",
     "plural": "mice",
     "emoji": "🐁",
     "longDesc": "squeak squeak",
     "role": "prey",
     "rarity": 0,
     "buy": 0,
-    "sell": 5000,
+    "sell": 1250,
     "in_crates": false
   },
   "kangaroo": {
     "id": "kangaroo",
     "name": "kangaroo",
+    "article": "a",
     "plural": "kangaroos",
     "emoji": "🦘",
     "longDesc": "australia",
     "role": "prey",
     "rarity": 3,
     "buy": 0,
-    "sell": 60000,
+    "sell": 25000,
     "in_crates": false
   },
   "wolf": {
     "id": "wolf",
     "name": "wolf",
+    "article": "a",
     "plural": "wolves",
     "emoji": "🐺",
     "longDesc": "bark.",
     "role": "prey",
     "rarity": 3,
     "buy": 0,
-    "sell": 150000,
+    "sell": 30000,
     "in_crates": false
   },
   "mineshaft_chest": {
     "id": "mineshaft_chest",
     "name": "mineshaft chest",
+    "article": "a",
     "plural": "mineshaft chests",
     "emoji": "<:nypsi_chest:1034843159647236190>",
     "role": "crate",
-    "longDesc": "open to receive 3 mining related items",
+    "longDesc": "open to receive 5 mining related items",
     "aliases": ["mineshaft", "chest"],
     "rarity": 3,
     "in_crates": false,
-    "crate_runs": 3,
+    "crate_runs": 5,
     "items": [
-      "id:wooden_pickaxe",
-      "id:iron_pickaxe",
+      "id:efficiency",
+      "id:fortune",
+      "id:unbreaking",
       "id:diamond_pickaxe",
-      "role:ore",
-      "id:quartz",
       "id:ancient_debris",
       "id:emerald",
-      "id:diamond",
-      "id:gold_nugget"
-    ]
+      "id:obsidian"
+    ],
+    "random_drop_chance": 40
   },
   "vote_crate": {
     "id": "vote_crate",
     "name": "vote crate",
+    "article": "a",
     "plural": "vote crates",
     "emoji": "📦",
     "role": "crate",
@@ -529,6 +688,7 @@
   "basic_crate": {
     "id": "basic_crate",
     "name": "basic crate",
+    "article": "a",
     "plural": "basic crates",
     "emoji": "📦",
     "role": "crate",
@@ -536,11 +696,13 @@
     "rarity": 1,
     "aliases": ["basic"],
     "crate_runs": 2,
-    "in_crates": true
+    "in_crates": true,
+    "random_drop_chance": 100
   },
   "69420_crate": {
     "id": "69420_crate",
     "name": "69420 crate",
+    "article": "a",
     "plural": "69420 crates",
     "emoji": "🎁",
     "role": "crate",
@@ -548,11 +710,13 @@
     "rarity": 1,
     "aliases": ["69420"],
     "crate_runs": 2,
-    "in_crates": true
+    "in_crates": true,
+    "random_drop_chance": 100
   },
   "nypsi_crate": {
     "id": "nypsi_crate",
     "name": "nypsi crate",
+    "article": "a",
     "plural": "nypsi crates",
     "emoji": "<:xnypsi:819957267548864543>",
     "role": "crate",
@@ -561,16 +725,18 @@
     "rarity": 4,
     "aliases": ["nypsi"],
     "crate_runs": 5,
-    "in_crates": true
+    "in_crates": true,
+    "random_drop_chance": 50
   },
   "calendar": {
     "id": "calendar",
     "name": "calendar",
+    "article": "a",
     "plural": "calendars",
     "emoji": "📅",
     "longDesc": "protects your daily streak in the event you forget to do /daily",
     "role": "item",
-    "rarity": 2,
+    "rarity": 3,
     "buy": 0,
     "sell": 100000,
     "in_crates": true
@@ -578,16 +744,20 @@
   "padlock": {
     "id": "padlock",
     "name": "padlock",
+    "article": "a",
     "plural": "padlocks",
     "emoji": "🔒",
     "longDesc": "protect your balance",
     "role": "item",
     "rarity": 0,
+    "buy": 50000,
+    "sell": 25000,
     "in_crates": true
   },
   "lock_pick": {
     "id": "lock_pick",
     "name": "lock pick",
+    "article": "a",
     "plural": "lock picks",
     "emoji": "🧰",
     "longDesc": "destroy someone's padlock",
@@ -600,6 +770,7 @@
   "mask": {
     "id": "mask",
     "name": "mask",
+    "article": "a",
     "plural": "masks",
     "emoji": "😷",
     "longDesc": "bypass rob cooldown",
@@ -612,18 +783,19 @@
   "cookie": {
     "id": "cookie",
     "name": "cookie",
+    "article": "a",
     "plural": "cookies",
     "emoji": "🍪",
     "longDesc": "yum yum",
     "rarity": 0,
     "role": "booster",
-    "booster_desc": "eat a cookie to get +**1**% multi for 30 seconds (stacks up to 7)",
+    "booster_desc": "eat a cookie to get +**1**% multi for 30 seconds (stacks up to 3)",
     "buy": 0,
-    "sell": 250,
+    "sell": 1000,
     "stackable": true,
-    "max": 7,
+    "max": 3,
     "boosterEffect": {
-      "boosts": ["multi"],
+      "boosts": ["multi", "sellmulti"],
       "effect": 1,
       "time": 30
     },
@@ -632,26 +804,27 @@
   "cake": {
     "id": "cake",
     "name": "cake",
+    "article": "a",
     "plural": "cakes",
     "emoji": "<:nypsi_cake:1002977512630001725>",
     "longDesc": "yum yum 😋",
-    "rarity": 0,
+    "rarity": 69,
     "role": "booster",
-    "booster_desc": "eat a cake to get +**10**% xp (stacks up to 3)",
+    "booster_desc": "eat a cake to get +**50**% xp",
     "buy": 0,
     "sell": 50000,
-    "stackable": true,
-    "max": 3,
+    "stackable": false,
     "boosterEffect": {
       "boosts": ["xp"],
-      "effect": 0.1,
+      "effect": 0.5,
       "time": 300
     },
-    "in_crates": true
+    "in_crates": false
   },
   "tooth": {
     "id": "tooth",
     "name": "tooth",
+    "article": "a",
     "plural": "teeth",
     "emoji": "🦷",
     "longDesc": "its a molar i think",
@@ -662,6 +835,7 @@
   "bitch": {
     "id": "bitch",
     "name": "bitch",
+    "article": "a",
     "plural": "bitches",
     "emoji": "👧🏼",
     "longDesc": "i coded some bitches",
@@ -672,6 +846,8 @@
   "clover": {
     "id": "clover",
     "name": "clover leaf",
+    "article": "a",
+    "plural": "clover leaves",
     "emoji": "🍀",
     "longDesc": "ur pretty lucky",
     "rarity": 2,
@@ -682,6 +858,7 @@
   "teddy": {
     "id": "teddy",
     "name": "teddy bear",
+    "article": "a",
     "plural": "teddy bears",
     "emoji": "🧸",
     "shortDesc": "[i love you](https://64.media.tumblr.com/3020949b864ff6fdeecdd80fe5b5859c/tumblr_mg5tw61IIQ1r5rz5so1_500.gif)",
@@ -694,27 +871,33 @@
   "floppy_disk": {
     "id": "floppy_disk",
     "name": "3d printed save icon",
+    "article": "a",
+    "plural": "3d printed save icons",
     "emoji": "💾",
     "longDesc": "we're getting old now",
     "rarity": 2,
     "role": "collectable",
-    "aliases": ["save", "icon"],
+    "aliases": ["save", "icon", "floppy", "disk"],
     "in_crates": true
   },
   "test_tube": {
     "id": "test_tube",
     "name": "somebodys children",
+    "article": "a",
+    "plural": "somebodys childrens",
     "emoji": "🧪",
     "longDesc": "no comment",
     "rarity": 1,
     "role": "collectable",
-    "aliases": ["child", "children"],
+    "aliases": ["child", "children", "somebodys"],
     "in_crates": true
   },
   "skyline_r34": {
     "id": "skyline_r34",
     "name": "nissan skyline gtr r34",
+    "plural": "nissan skyline gtr r34s",
     "emoji": "<:nypsi_r34:839788651763990538>",
+    "article": "a",
     "longDesc": "#rippaulwalker",
     "rarity": 4,
     "role": "car",
@@ -725,6 +908,8 @@
   "toyota_supra": {
     "id": "toyota_supra",
     "name": "toyota supra mk4",
+    "plural": "toyota supra mk4s",
+    "article": "a",
     "emoji": "<:nypsi_supra:839790774354313227>",
     "longDesc": "[is that a supra?!](https://www.youtube.com/watch?v=ybZmYvaqwEg)",
     "rarity": 3,
@@ -736,6 +921,7 @@
   "lawyer": {
     "id": "lawyer",
     "name": "lawyer",
+    "article": "a",
     "plural": "lawyers",
     "emoji": "👨‍⚖️",
     "longDesc": "[if you're caught by the police on a robbery, you wont lose money](https://i.giphy.com/media/40dEau6bZRO3S/giphy.webp)",
@@ -750,6 +936,7 @@
   "minecraft_account": {
     "id": "minecraft_account",
     "name": "minecraft account",
+    "article": "a",
     "plural": "minecraft accounts",
     "emoji": "<:nypsi_minecraft:839560490324721735>",
     "longDesc": "[mining away... i dont know what to mine ill mine this anyway](https://www.youtube.com/watch?v=dgha9S39Y6M)",
@@ -761,6 +948,7 @@
   "ring": {
     "id": "ring",
     "name": "ring",
+    "article": "a",
     "plural": "rings",
     "emoji": "💍",
     "longDesc": "maybe get married?",
@@ -771,12 +959,13 @@
   "radio": {
     "id": "radio",
     "name": "police radio",
+    "article": "a",
     "plural": "police radios",
     "emoji": "📻",
     "longDesc": "prevent someone from robbing people",
     "rarity": 0,
     "role": "item",
-    "aliases": ["policescanner"],
+    "aliases": ["policescanner, policeradio, police"],
     "buy": 150000,
     "sell": 25000,
     "in_crates": true
@@ -784,6 +973,8 @@
   "lancer_evox": {
     "id": "lancer_evox",
     "name": "mitsubishi lancer evo x",
+    "plural": "mitsubishi lancer evo xs",
+    "article": "a",
     "emoji": "<:nypsi_evo:839788961399439380>",
     "longDesc": "mitsubishi > subuwu",
     "rarity": 0,
@@ -797,6 +988,8 @@
   "honda_civic": {
     "id": "honda_civic",
     "name": "honda civic type r",
+    "plural": "honda civic type rs",
+    "article": "a",
     "emoji": "<:nypsi_civic:976564488805437512>",
     "longDesc": "wait for the vtec to kick in",
     "rarity": 3,
@@ -810,6 +1003,8 @@
   "subaru_wrx": {
     "id": "subaru_wrx",
     "name": "subuwu",
+    "plural": "subuwus",
+    "article": "a",
     "emoji": "<:nypsi_subuwu:839788518549356595>",
     "longDesc": "uwu",
     "rarity": 2,
@@ -824,17 +1019,19 @@
     "id": "flappy_bird",
     "name": "flappy bird",
     "plural": "flappy birds",
+    "article": "a",
     "emoji": "<:nypsi_flappy_bird:839531060194967582>",
     "longDesc": "flap flap",
     "rarity": 3,
     "role": "prey",
     "buy": 0,
-    "sell": 75000,
+    "sell": 25000,
     "in_crates": true
   },
   "chastity_cage": {
     "id": "chastity_cage",
     "name": "chastity cage",
+    "article": "a",
     "plural": "chastity cages",
     "emoji": "<:nypsi_chastity_cage:839532763338113036>",
     "longDesc": "stop someone finding milfs",
@@ -848,6 +1045,8 @@
   "tesla_modelx": {
     "id": "tesla_modelx",
     "name": "tesla model x",
+    "plural": "tesla model xs",
+    "article": "a",
     "emoji": "<:nypsi_tesla:839791898540638209>",
     "longDesc": "electric car go nyowm",
     "rarity": 2,
@@ -861,6 +1060,8 @@
   "handcuffs": {
     "id": "handcuffs",
     "name": "handcuffs",
+    "article": "a",
+    "plural": "handcuffs",
     "emoji": "<:nypsi_handcuffs:839797762404122654>",
     "longDesc": "simply handcuff someone",
     "rarity": 1,
@@ -873,6 +1074,8 @@
   "cycle": {
     "id": "cycle",
     "name": "bicycle",
+    "plural": "bicycles",
+    "article": "a",
     "emoji": "<:nypsi_bikeman:969327640001531904>",
     "longDesc": "wow",
     "rarity": 69,
@@ -886,6 +1089,7 @@
   "smart_car": {
     "id": "smart_car",
     "name": "smart car",
+    "article": "a",
     "plural": "smart cars",
     "emoji": "<:nypsi_smart_car:839967953306386442>",
     "longDesc": "you should be embarrassed of yourself",
@@ -900,6 +1104,8 @@
   "lightning_mcqueen": {
     "id": "lightning_mcqueen",
     "name": "lightning mcqueen",
+    "plural": "lightning mcqueens",
+    "article": "a",
     "emoji": "<:nypsi_mcqueen:839969848297914418>",
     "longDesc": "it's lightning mcqueen!",
     "rarity": 2,
@@ -913,6 +1119,8 @@
   "fiat": {
     "id": "fiat",
     "name": "fiat from inbetweeners",
+    "article": "a",
+    "plural": "fiats from inbetweeners",
     "emoji": "<:nypsi_fiat:840255037108256798>",
     "longDesc": "spread em. ill be there in half an hour",
     "rarity": 1,
@@ -926,6 +1134,8 @@
   "ford_fiesta": {
     "id": "ford_fiesta",
     "name": "ford fiesta",
+    "plural": "ford fiestas",
+    "article": "a",
     "emoji": "<:nypsi_fiesta:840256269683523616>",
     "longDesc": "skrt skrt",
     "rarity": 1,
@@ -939,6 +1149,8 @@
   "vauxhall_corsa": {
     "id": "vauxhall_corsa",
     "name": "corsa 2003",
+    "plural": "corsa 2003s",
+    "article": "a",
     "emoji": "<:nypsi_corsa:840256040083521636>",
     "longDesc": "ayo chav check",
     "rarity": 1,
@@ -952,6 +1164,7 @@
   "redbull": {
     "id": "redbull",
     "name": "red bull",
+    "article": "a",
     "plural": "red bulls",
     "emoji": "<:nypsi_redbull:1001210452832964648>",
     "longDesc": "50% shorter cooldowns for 15 minutes",
@@ -970,6 +1183,7 @@
   "worm": {
     "id": "worm",
     "name": "worm",
+    "article": "a",
     "plural": "worms",
     "emoji": "🪱",
     "longDesc": "increased luck when fishing",
@@ -988,6 +1202,7 @@
   "extended_mag": {
     "id": "extended_mag",
     "name": "extended magazine",
+    "article": "an",
     "plural": "extended magazines",
     "emoji": "<:nypsi_extendedmag:1089515476922683495>",
     "longDesc": "increased luck when hunting",
@@ -1007,18 +1222,19 @@
   "multi_potion": {
     "id": "multi_potion",
     "name": "multiplier potion",
+    "article": "a",
     "plural": "multiplier potions",
-    "aliases": ["multi"],
+    "aliases": ["multi", "multiplierpotion", "multiplier_potion", "multiplier"],
     "emoji": "<:nypsi_potion:1001463080582131843>",
     "longDesc": "increase your multiplier by 3% for 30 minutes (stacks to 3)",
-    "rarity": 1,
+    "rarity": 3,
     "buy": 0,
     "sell": 100000,
     "role": "booster",
     "stackable": true,
     "max": 3,
     "boosterEffect": {
-      "boosts": ["multi"],
+      "boosts": ["multi", "sellmulti"],
       "effect": 3,
       "time": 1800
     },
@@ -1027,9 +1243,11 @@
   "fortune": {
     "id": "fortune",
     "name": "fortune",
+    "plural": "fortunes",
+    "article": "a",
     "emoji": "<a:nypsi_book:1001459250163359786>",
     "longDesc": "enchant your pickaxe with fortune (stacks to 3)",
-    "rarity": 1,
+    "rarity": 2,
     "buy": 0,
     "sell": 75000,
     "role": "booster",
@@ -1045,27 +1263,32 @@
   "unbreaking": {
     "id": "unbreaking",
     "name": "unbreaking",
+    "plural": "unbreakings",
+    "article": "an",
     "emoji": "<a:nypsi_book:1001459250163359786>",
     "longDesc": "when mining, fishing or hunting it will not reduce durability",
-    "rarity": 2,
+    "rarity": 4,
     "buy": 0,
-    "sell": 75000,
+    "sell": 150000,
     "role": "booster",
-    "stackable": true,
+    "stackable": false,
     "max": 3,
     "boosterEffect": {
       "boosts": ["mine", "fish", "hunt"],
       "effect": 0.5,
       "time": 3600
     },
-    "in_crates": true
+    "in_crates": true,
+    "random_drop_chance": 50
   },
   "efficiency": {
     "id": "efficiency",
     "name": "efficiency",
+    "article": "an",
+    "plural": "efficiencies",
     "emoji": "<a:nypsi_book:1001459250163359786>",
     "longDesc": "enchant your pickaxe with efficiency (stacks to 4)",
-    "rarity": 1,
+    "rarity": 2,
     "buy": 0,
     "sell": 75000,
     "role": "booster",
@@ -1081,10 +1304,11 @@
   "xp_potion": {
     "id": "xp_potion",
     "name": "xp potion",
+    "article": "an",
     "plural": "xp potions",
     "emoji": "<:nypsi_potion:1001463080582131843>",
     "longDesc": "earn 30% more xp for 30 minutes (stacks to 3)",
-    "rarity": 1,
+    "rarity": 2,
     "buy": 0,
     "sell": 75000,
     "aliases": ["xp"],
@@ -1101,7 +1325,9 @@
   "lucky_7": {
     "id": "lucky_7",
     "name": "lucky 7",
-    "aliases": ["7"],
+    "plural": "lucky 7s",
+    "aliases": ["lucky", "7"],
+    "article": "a",
     "emoji": "<:nypsi_7:1001553113368506538>",
     "longDesc": "improved chances for slots for 3 minutes",
     "rarity": 3,
@@ -1111,7 +1337,7 @@
     "stackable": false,
     "boosterEffect": {
       "boosts": ["slots"],
-      "effect": "improves slots win chance to 60%",
+      "effect": 7,
       "time": 180
     },
     "in_crates": true
@@ -1119,6 +1345,7 @@
   "stolen_credit_card": {
     "id": "stolen_credit_card",
     "name": "stolen credit card",
+    "article": "a",
     "plural": "stolen credit cards",
     "aliases": ["scc", "credit", "card", "cc"],
     "emoji": "💳",
@@ -1132,6 +1359,7 @@
   "streak_token": {
     "id": "streak_token",
     "name": "streak token",
+    "article": "a",
     "plural": "streak tokens",
     "aliases": ["streak"],
     "emoji": "🎟️",
@@ -1145,9 +1373,12 @@
   "blue_rocks": {
     "id": "blue_rocks",
     "name": "blue rocks",
+    "article": "a",
+    "plural": "blue rocks",
     "aliases": ["meth", "C10H15N"],
     "emoji": "<:nypsi_bluerock:1003408529954177144>",
     "longDesc": "https://youtu.be/Dbt-OfbQTpw?t=28",
+    "booster_desc": "improves fight strength",
     "rarity": 0,
     "buy": 0,
     "sell": 25000,
@@ -1155,7 +1386,7 @@
     "stackable": false,
     "boosterEffect": {
       "boosts": ["fight"],
-      "effect": "improves fight strength",
+      "effect": 0,
       "time": 1800
     },
     "in_crates": true
@@ -1163,17 +1394,20 @@
   "steroids": {
     "id": "steroids",
     "name": "steroids",
+    "article": "a",
+    "plural": "steroids",
     "aliases": ["roids"],
     "emoji": "💉",
     "longDesc": "https://tenor.com/view/ambeeee-gif-19218531",
     "rarity": 0,
+    "booster_desc": "improves fight strength",
     "buy": 100000,
     "sell": 75000,
     "role": "booster",
     "stackable": false,
     "boosterEffect": {
       "boosts": ["fight"],
-      "effect": "improves fight strength",
+      "effect": 0,
       "time": 3600
     },
     "in_crates": true
@@ -1181,6 +1415,8 @@
   "vote_booster": {
     "id": "vote_booster",
     "name": "vote booster",
+    "plural": "vote boosters",
+    "article": "a",
     "emoji": "✨",
     "longDesc": "increase your multiplier by 5% from voting",
     "rarity": 69,
@@ -1196,6 +1432,8 @@
   "coffee": {
     "id": "coffee",
     "name": "coffee",
+    "plural": "coffees",
+    "article": "a",
     "aliases": ["caffeine"],
     "emoji": "\u2615",
     "longDesc": "feed your workers with coffee and produce 50% more items per hour for 6 hours (stacks to 3)",
@@ -1214,6 +1452,7 @@
   "stolen_nasa_computer": {
     "id": "stolen_nasa_computer",
     "name": "stolen nasa computer",
+    "article": "a",
     "plural": "stolen nasa computers",
     "aliases": ["nasa", "computer"],
     "emoji": "🖥",
@@ -1227,6 +1466,7 @@
   "launchpad": {
     "id": "launchpad",
     "name": "launchpad",
+    "article": "a",
     "plural": "launchpads",
     "aliases": ["launch"],
     "emoji": "🚀",
@@ -1240,6 +1480,7 @@
   "warehouse_permit": {
     "id": "warehouse_permit",
     "name": "warehouse permit",
+    "article": "a",
     "plural": "warehouse permits",
     "aliases": ["warehouse", "permit"],
     "emoji": "📄",
@@ -1253,6 +1494,7 @@
   "orphan": {
     "id": "orphan",
     "name": "orphan",
+    "article": "an",
     "plural": "orphans",
     "emoji": "🧒🏼",
     "longDesc": "applies the underage workers upgrade to the amazon worker",
@@ -1265,6 +1507,7 @@
   "grandma": {
     "id": "grandma",
     "name": "grandma",
+    "article": "a",
     "plural": "grandmas",
     "aliases": ["gran", "nan", "uncle"],
     "emoji": "👵🏻",
@@ -1272,11 +1515,40 @@
     "rarity": 2,
     "sell": 100000,
     "role": "bakery-upgrade",
+    "in_crates": true,
+    "random_drop_chance": 75
+  },
+  "grandpa": {
+    "id": "grandpa",
+    "name": "grandpa",
+    "article": "a",
+    "plural": "grandpas",
+    "aliases": ["grandad", "granda", "grandaddy"],
+    "emoji": "👴🏻",
+    "longDesc": "+0.5% chance of baking a cake",
+    "rarity": 2,
+    "sell": 100000,
+    "role": "bakery-upgrade",
     "in_crates": true
+  },
+  "oven": {
+    "id": "oven",
+    "name": "easy bake oven",
+    "article": "an",
+    "plural": "ovens",
+    "aliases": ["cooker", "easybakeoven", "easybake", "easy_bake_oven"],
+    "emoji": "<:nypsi_oven:1099724311138414743>",
+    "longDesc": "+1 hour afk time",
+    "rarity": 3,
+    "sell": 1000000,
+    "role": "bakery-upgrade",
+    "in_crates": true,
+    "random_drop_chance": 60
   },
   "highroller": {
     "id": "highroller",
     "name": "highroller",
+    "article": "a",
     "plural": "highrollers",
     "aliases": ["high", "roller"],
     "emoji": "💸",
@@ -1295,6 +1567,7 @@
   "steve": {
     "id": "steve",
     "name": "steve",
+    "article": "a",
     "plural": "steves",
     "aliases": ["stevieee", "stephen", "stephen", "maxsdad", "ste_ste_ste"],
     "emoji": "👷🏻‍♂️",
@@ -1313,6 +1586,8 @@
   "palm_tree": {
     "id": "palm_tree",
     "name": "palm tree necklace",
+    "plural": "palm tree necklaces",
+    "article": "a",
     "emoji": "<:nypsi_necklace:1032965107896029185>",
     "longDesc": "it's the bot owner's actual necklace!!",
     "rarity": 5,
@@ -1325,8 +1600,10 @@
   "double_xp": {
     "id": "double_xp",
     "name": "double xp",
+    "plural": "double xps",
+    "article": "a",
     "emoji": "✨",
-    "longDesc": "earn double xp for 8 hours",
+    "longDesc": "earn double xp for 4 hours",
     "rarity": 4,
     "buy": 0,
     "sell": 1000000,
@@ -1335,13 +1612,15 @@
     "boosterEffect": {
       "boosts": ["xp"],
       "effect": 1,
-      "time": 28800
+      "time": 14400
     },
     "in_crates": true
   },
   "nether_portal": {
     "id": "nether_portal",
     "name": "nether portal",
+    "plural": "nether portals",
+    "article": "a",
     "emoji": "<:nypsi_portal:1034509723749322843>",
     "longDesc": "used to enter the nether when mining",
     "role": "item",
@@ -1349,8 +1628,8 @@
     "buy": 0,
     "sell": 1000000,
     "craft": {
-      "ingrediants": ["obsidian:10"],
-      "time": 1800
+      "ingredients": ["obsidian:10"],
+      "time": 3600
     },
     "in_crates": false,
     "aliases": ["portal"]
@@ -1358,21 +1637,26 @@
   "green_gem": {
     "id": "green_gem",
     "name": "green gem",
+    "plural": "green gems",
+    "article": "a",
     "emoji": "<:nypsi_gem_green:1046866209326514206>",
     "longDesc": "a mysterious green, shiny gem. only found during a specific activity. it is widely known that the green gem is harmless... mostly. the most noble of all gems",
     "role": "item",
     "sell": 1000000,
     "rarity": 2,
     "in_crates": false,
-    "aliases": ["green"],
+    "aliases": ["green", "gem"],
     "craft": {
       "time": 172800,
-      "ingrediants": ["gem_shard:10"]
-    }
+      "ingredients": ["gem_shard:10"]
+    },
+    "random_drop_chance": 5
   },
   "purple_gem": {
     "id": "purple_gem",
     "name": "purple gem",
+    "plural": "purple gems",
+    "article": "a",
     "emoji": "<:nypsi_gem_purple:1046932495184187452>",
     "longDesc": "a mysterious purple, shiny gem. only found during a specific activity. some say gems are magical, made by witches. and are dangerous...",
     "role": "item",
@@ -1382,12 +1666,14 @@
     "aliases": ["purple"],
     "craft": {
       "time": 172800,
-      "ingrediants": ["gem_shard:15"]
+      "ingredients": ["gem_shard:15"]
     }
   },
   "pink_gem": {
     "id": "pink_gem",
     "name": "pink gem",
+    "plural": "pink gems",
+    "article": "a",
     "emoji": "<:nypsi_gem_pink:1046932847069499472>",
     "longDesc": "a mysterious pink, shiny gem. only found during a specific activity. some say gems were planted by aliens in the early stages of earth's creation",
     "role": "item",
@@ -1397,12 +1683,14 @@
     "aliases": ["pink"],
     "craft": {
       "time": 172800,
-      "ingrediants": ["gem_shard:20"]
+      "ingredients": ["gem_shard:20"]
     }
   },
   "blue_gem": {
     "id": "blue_gem",
     "name": "blue gem",
+    "plural": "blue gems",
+    "article": "a",
     "emoji": "<:nypsi_gem_blue:1046933487770423406>",
     "longDesc": "a mysterious blue, shiny gem. only found during a specific activity. some say gems are ancient relics of a long past civilization",
     "role": "item",
@@ -1412,12 +1700,15 @@
     "aliases": ["blue"],
     "craft": {
       "time": 172800,
-      "ingrediants": ["gem_shard:5"]
-    }
+      "ingredients": ["gem_shard:5"]
+    },
+    "random_drop_chance": 5
   },
   "white_gem": {
     "id": "white_gem",
     "name": "white gem",
+    "plural": "white gems",
+    "article": "a",
     "emoji": "<:nypsi_gem_white:1046933670436552725>",
     "longDesc": "a mysterious white, shiny gem. the most ancient and most powerful of them all. ancient tablets claim that the holder of this gem has the power to create worlds. be careful.",
     "role": "item",
@@ -1426,13 +1717,15 @@
     "sell": 2500000,
     "craft": {
       "time": 259200,
-      "ingrediants": ["blue_gem:2", "green_gem:2", "pink_gem:1", "purple_gem:1"]
+      "ingredients": ["blue_gem:2", "green_gem:2", "pink_gem:1", "purple_gem:1"]
     },
     "aliases": ["white"]
   },
   "crystal_heart": {
     "id": "crystal_heart",
     "name": "crystal heart",
+    "plural": "crystal hearts",
+    "article": "a",
     "emoji": "<:nypsi_crystal_heart:1051624572694319124>",
     "longDesc": "it's widely understood throughout history, that nobody truly understands the origin of any gem, including the crystal heart. ancient hieroglyphs depict the crystal heart forming when all gems in existence fuse together. quite a sight to behold.",
     "role": "item",
@@ -1444,13 +1737,15 @@
   "beginner_booster": {
     "id": "beginner_booster",
     "name": "new player booster",
+    "plural": "new player boosters",
+    "article": "a",
     "emoji": "✨",
     "longDesc": "24 hour 10% multi and double xp booster for new players",
     "rarity": 69,
     "role": "booster",
     "stackable": false,
     "boosterEffect": {
-      "boosts": ["multi", "xp"],
+      "boosts": ["multi", "xp", "sellmulti"],
       "effect": 10,
       "time": 86400
     },
@@ -1460,6 +1755,7 @@
   "cursor": {
     "id": "cursor",
     "name": "cursor",
+    "article": "a",
     "plural": "cursors",
     "aliases": ["pointer"],
     "emoji": "<:nypsi_cursor:1054771565557981244>",
@@ -1469,9 +1765,28 @@
     "role": "bakery-upgrade",
     "in_crates": true
   },
+  "super_cursor": {
+    "id": "super_cursor",
+    "name": "super cursor",
+    "article": "a",
+    "plural": "super cursors",
+    "aliases": ["super_pointer", "super pointer"],
+    "emoji": "<:super_cursor:1090263183278739517>",
+    "longDesc": "+1 min & max cookie when baking",
+    "rarity": 3,
+    "sell": 300000,
+    "role": "bakery-upgrade",
+    "craft": {
+      "time": 21600,
+      "ingredients": ["cursor:3"]
+    },
+    "in_crates": true,
+    "random_drop_chance": 75
+  },
   "workers_crate": {
     "id": "workers_crate",
     "name": "workers crate",
+    "article": "a",
     "plural": "worker crates",
     "emoji": "<:worker_crate:1057639345441476668>",
     "role": "crate",
@@ -1485,6 +1800,7 @@
   "boosters_crate": {
     "id": "boosters_crate",
     "name": "boosters crate",
+    "article": "a",
     "plural": "booster crates",
     "emoji": "<:booster_crate:1057640419892133968>",
     "role": "crate",
@@ -1493,11 +1809,13 @@
     "rarity": 3,
     "in_crates": true,
     "crate_runs": 2,
-    "items": ["role:booster"]
+    "items": ["role:booster"],
+    "random_drop_chance": 70
   },
   "gem_crate": {
     "id": "gem_crate",
     "name": "gem crate",
+    "article": "a",
     "plural": "gem crates",
     "emoji": "<:gem_crate:1057641447756660747>",
     "role": "crate",
@@ -1519,46 +1837,73 @@
   "bronze_credit": {
     "id": "bronze_credit",
     "name": "bronze credit",
-    "emoji": "<:nypsi_bronze:1061353493497118840>",
+    "plural": "bronze credits",
+    "article": "a",
+    "emoji": "<:nypsi_bronze:1108083689478443058>",
     "role": "item",
     "shortDesc": "7 days of bronze credit",
     "longDesc": "use to receive 7 days of bronze (as long as you don't have a better tier currently)",
+    "aliases": ["bronze"],
     "rarity": 69,
-    "in_crates": false
+    "in_crates": false,
+    "random_drop_chance": 7
   },
   "silver_credit": {
     "id": "silver_credit",
     "name": "silver credit",
-    "emoji": "<:nypsi_silver:1061353458650845184>",
+    "plural": "silver credits",
+    "article": "a",
+    "emoji": "<:nypsi_silver:1108083725813686334>",
     "role": "item",
     "shortDesc": "7 days of silver credit",
     "longDesc": "use to receive 7 days of silver (as long as you don't have a better tier currently)",
+    "aliases": ["silver"],
     "rarity": 69,
-    "in_crates": false
+    "in_crates": false,
+    "craft": {
+      "ingredients": ["bronze_credit:3"],
+      "time": 86400
+    },
+    "random_drop_chance": 2
   },
   "gold_credit": {
     "id": "gold_credit",
     "name": "gold credit",
-    "emoji": "<:nypsi_gold:1061353521825456229>",
+    "plural": "gold credits",
+    "article": "a",
+    "emoji": "<:nypsi_gold:1108083767236640818>",
     "role": "item",
     "shortDesc": "7 days of gold credit",
     "longDesc": "use to receive 7 days of gold (as long as you don't have a better tier currently)",
+    "aliases": ["gold"],
     "rarity": 69,
-    "in_crates": false
+    "in_crates": false,
+    "craft": {
+      "ingredients": ["silver_credit:3"],
+      "time": 86400
+    }
   },
   "platinum_credit": {
     "id": "platinum_credit",
     "name": "platinum credit",
-    "emoji": "<:nypsi_plat:1061353557644824596>",
+    "plural": "platinum credits",
+    "article": "a",
+    "emoji": "<:nypsi_plat:1108083805841002678>",
     "role": "item",
     "shortDesc": "7 days of platinum credit",
     "longDesc": "use to receive 7 days of platinum (as long as you don't have a better tier currently)",
+    "aliases": ["plat", "platinum"],
     "rarity": 69,
-    "in_crates": false
+    "in_crates": false,
+    "craft": {
+      "ingredients": ["gold_credit:3"],
+      "time": 86400
+    }
   },
   "daily_scratch_card": {
     "id": "daily_scratch_card",
     "name": "daily scratch card",
+    "article": "a",
     "plural": "daily scratch cards",
     "emoji": "<:nypsi_daily_scratch:1061368847522869289>",
     "role": "scratch-card",
@@ -1566,34 +1911,37 @@
     "aliases": ["dailyscratch", "dscratch", "dscratchie", "daily"],
     "rarity": 69,
     "in_crates": false,
-    "sell": 2500,
+    "sell": 75000,
     "clicks": 3,
     "items": [
       "money:1000000",
-      "xp:100",
-      "id:calendar:50",
-      "id:bob:60",
-      "id:stolen_credit_card",
+      "xp:250",
+      "karma:75",
+      "id:calendar:35",
+      "id:bob",
       "id:streak_token:50",
       "id:grandma:60",
+      "id:grandpa:75",
+      "id:super_cursor:40",
+      "id:oven:35",
       "id:diamond_pickaxe:40",
       "id:iron_pickaxe:70",
-      "id:wooden_pickaxe:75",
       "id:fishing_rod:75",
       "id:gun:75",
-      "id:basic_crate:60",
-      "id:bronze_credit:3",
-      "id:silver_credit:2",
-      "id:gem_shard:4",
+      "id:basic_crate:70",
+      "id:69420_crate:65",
+      "id:bronze_credit:0.7",
       "id:quarry_scrap:4",
-      "id:green_gem:3",
-      "id:blue_gem:3",
-      "id:pink_gem:0.7"
+      "id:green_gem:1",
+      "id:blue_gem:1",
+      "id:pink_gem:0.3",
+      "id:lucky_cheese:5"
     ]
   },
   "lucky_scratch_card": {
     "id": "lucky_scratch_card",
     "name": "lucky scratch card",
+    "article": "a",
     "plural": "lucky scratch cards",
     "emoji": "<:nypsi_daily_scratch:1061368847522869289>",
     "role": "scratch-card",
@@ -1605,14 +1953,17 @@
     "clicks": 6,
     "items": [
       "money:2500000",
-      "xp:125",
-      "id:calendar",
+      "xp:150",
+      "id:calendar:60",
       "id:bob",
-      "id:lucky_7:80",
-      "id:coffee:90",
-      "id:streak_token:90",
-      "id:grandma:30",
+      "id:lucky_7:40",
+      "id:coffee:40",
+      "id:streak_token",
+      "id:grandma:70",
+      "id:grandpa:60",
       "id:cursor:70",
+      "id:super_cursor:50",
+      "id:oven:30",
       "id:diamond_pickaxe:50",
       "id:iron_pickaxe:75",
       "id:incredible_fishing_rod:50",
@@ -1620,19 +1971,20 @@
       "id:basic_crate:95",
       "id:69420_crate:90",
       "id:nypsi_crate:20",
-      "id:bronze_credit:6",
+      "id:bronze_credit:3",
       "id:silver_credit:2",
-      "id:gold_credit:2",
-      "id:gem_shard:7",
-      "id:green_gem:3",
-      "id:blue_gem:3",
-      "id:purple_gem:2",
-      "id:gem_crate:0.5"
-    ]
+      "id:gold_credit:1",
+      "id:green_gem:2",
+      "id:blue_gem:2",
+      "id:purple_gem:1",
+      "id:gem_crate:0.2"
+    ],
+    "random_drop_chance": 90
   },
   "legendary_scratch_card": {
     "id": "legendary_scratch_card",
     "name": "legendary scratch card",
+    "article": "a",
     "plural": "legendary scratch cards",
     "emoji": "<:nypsi_legendary_scratch:1061405285245272074>",
     "role": "scratch-card",
@@ -1643,27 +1995,33 @@
     "sell": 1000000,
     "clicks": 10,
     "items": [
-      "money:1000000",
+      "money:10000000",
       "karma:250",
       "id:double_xp",
+      "id:super_cursor",
+      "id:oven",
       "id:steve",
       "id:obsidian",
       "id:diamond_pickaxe",
       "id:nether_portal:75",
       "id:incredible_fishing_rod",
-      "id:nypsi_crate:30",
-      "id:platinum_credit:3",
-      "id:bronze_credit:10",
-      "id:silver_credit:5",
-      "id:gold_credit:6",
-      "id:pink_gem:5",
+      "id:incredible_gun",
+      "id:quarry_scrap",
+      "id:nypsi_crate:50",
+      "id:platinum_credit:2",
+      "id:bronze_credit:4",
+      "id:silver_credit:4",
+      "id:gold_credit:3",
+      "id:pink_gem:3",
       "id:gem_shard:50",
       "id:gem_crate:2.5"
-    ]
+    ],
+    "random_drop_chance": 40
   },
   "karma_scratch_card": {
     "id": "karma_scratch_card",
     "name": "karma scratch card",
+    "article": "a",
     "plural": "karma scratch cards",
     "emoji": "<:nypsi_daily_scratch:1061368847522869289>",
     "role": "scratch-card",
@@ -1677,7 +2035,8 @@
       "money:3000000",
       "xp:175",
       "karma:25",
-      "id:cursor:75",
+      "id:super_cursor",
+      "id:oven",
       "id:bob",
       "id:diamond_pickaxe:80",
       "id:incredible_fishing_rod:95",
@@ -1686,14 +2045,14 @@
       "id:nypsi_crate:30",
       "id:silver_credit:5",
       "id:gold_credit:3",
-      "id:platinum_credit:1",
-      "id:pink_gem:1",
-      "id:gem_shard:15"
-    ]
+      "id:pink_gem:1"
+    ],
+    "random_drop_chance": 50
   },
   "corner_shop_scratchie": {
     "id": "corner_shop_scratchie",
     "name": "corner shop scratchie",
+    "article": "a",
     "plural": "corner shop scratchies",
     "emoji": "<:nypsi_daily_scratch:1061368847522869289>",
     "role": "scratch-card",
@@ -1701,14 +2060,13 @@
     "aliases": ["cscratch", "cscratchie", "cornershop"],
     "rarity": 69,
     "in_crates": false,
-    "buy": 300000,
+    "buy": 100000,
     "sell": 50000,
     "clicks": 4,
     "items": [
-      "money:300000",
+      "money:500000",
       "xp:100",
       "id:lawyer",
-      "id:cake",
       "id:diamond",
       "id:cookie",
       "id:worm",
@@ -1717,8 +2075,11 @@
       "id:ancient_debris:60",
       "id:stolen_credit_card:90",
       "id:grandma:20",
+      "id:grandpa:10",
+      "id:super_cursor:5",
       "id:lightning_mcqueen:40",
       "id:redbull:10",
+      "id:rick_astley:40",
       "id:xp_potion:10",
       "id:wooden_pickaxe:55",
       "id:iron_pickaxe:30",
@@ -1728,7 +2089,7 @@
       "id:basic_crate:15",
       "id:workers_crate:3",
       "id:boosters_crate:3",
-      "id:bronze_credit:0.2",
+      "id:bronze_credit:0.1",
       "id:purple_gem:0.1",
       "id:quarry_scrap:3"
     ]
@@ -1736,6 +2097,7 @@
   "bob": {
     "id": "bob",
     "name": "bob the builder",
+    "article": "a",
     "plural": "bob the builders",
     "emoji": "<:nypsi_bob:1078776552067694672>",
     "longDesc": "remove an hour of time from all your items being crafted",
@@ -1748,21 +2110,24 @@
   "gem_shard": {
     "id": "gem_shard",
     "name": "gem shard",
+    "article": "a",
     "plural": "gem shards",
     "emoji": "<:nypsi_gem_shard:1088524343367188510>",
     "longDesc": "gem shards have no known powers unlike intact shards, however, it is known that when you put enough gem shards together they will reliably form into full shards, if you're lucky...",
     "role": "item",
     "aliases": ["shard", "shards"],
-    "rarity": 69,
+    "rarity": 3,
     "buy": 0,
     "sell": 500000,
-    "in_crates": false
+    "in_crates": false,
+    "random_drop_chance": 25
   },
   "quarry_scrap": {
     "id": "quarry_scrap",
     "name": "quarry scrap",
+    "article": "a",
     "plural": "quarry scraps",
-    "aliases": ["scrap", "scraps"],
+    "aliases": ["scrap", "scraps", "quarry"],
     "emoji": "🪨",
     "longDesc": "rarely found from your quarry, can be crafted into quarry upgrades",
     "role": "item",
@@ -1774,6 +2139,7 @@
   "gem_radar": {
     "id": "gem_radar",
     "name": "gem radar",
+    "article": "a",
     "plural": "gem radars",
     "aliases": ["radar"],
     "emoji": "📡",
@@ -1786,12 +2152,13 @@
     "worker_upgrade_id": "gem_radar",
     "craft": {
       "time": 43200,
-      "ingrediants": ["quarry_scrap:12"]
+      "ingredients": ["quarry_scrap:12"]
     }
   },
   "earth_scanner": {
     "id": "earth_scanner",
     "name": "earth scanner",
+    "article": "an",
     "plural": "earth scanners",
     "aliases": ["scanner", "earth"],
     "emoji": "📟",
@@ -1804,12 +2171,13 @@
     "worker_upgrade_id": "earth_scanner",
     "craft": {
       "time": 43200,
-      "ingrediants": ["quarry_scrap:5"]
+      "ingredients": ["quarry_scrap:5"]
     }
   },
   "manager": {
     "id": "manager",
     "name": "manager",
+    "article": "a",
     "plural": "manager",
     "emoji": "👨🏻‍💼",
     "longDesc": "increases profit per item in your quarry",
@@ -1823,6 +2191,7 @@
   "shipping_container": {
     "id": "shipping_container",
     "name": "shipping container",
+    "article": "a",
     "plural": "shipping containers",
     "aliases": ["container", "containers", "shipping", "ship"],
     "emoji": "<:nypsi_container:1088558592187179188>",
@@ -1833,5 +2202,72 @@
     "sell": 150000,
     "in_crates": true,
     "worker_upgrade_id": "shipping_containers"
+  },
+  "viagra": {
+    "id": "viagra",
+    "name": "viagra",
+    "article": "a",
+    "plural": "viagras",
+    "emoji": "<:nypsi_viagra:1090257077227761694>",
+    "longDesc": "if you cant get it up...",
+    "rarity": 2,
+    "role": "booster",
+    "booster_desc": "gets it up",
+    "buy": 0,
+    "sell": 50000,
+    "stackable": false,
+    "boosterEffect": {
+      "boosts": ["pp"],
+      "effect": 5,
+      "time": 1800
+    },
+    "in_crates": true
+  },
+  "rick_astley": {
+    "id": "rick_astley",
+    "name": "rick astley",
+    "plural": "rick astleys",
+    "article": "a",
+    "emoji": "<a:rick_astley:1100529748796506203>",
+    "longDesc": "rick roll someone",
+    "rarity": 2,
+    "role": "item",
+    "aliases": ["rick", "rickroll"],
+    "sell": 1000000,
+    "in_crates": true
+  },
+  "lucky_cheese": {
+    "id": "lucky_cheese",
+    "name": "lucky cheese",
+    "article": "a",
+    "plural": "lucky cheese",
+    "aliases": ["cheese"],
+    "emoji": "🧀",
+    "longDesc": "increase your sell multiplier by 10% for 30 minutes (stacks to 10)",
+    "rarity": 4,
+    "buy": 0,
+    "sell": 100000,
+    "role": "booster",
+    "stackable": true,
+    "max": 10,
+    "boosterEffect": {
+      "boosts": ["sellmulti"],
+      "effect": 10,
+      "time": 1800
+    },
+    "in_crates": false
+  },
+  "goat_tag": {
+    "id": "goat_tag",
+    "name": "goat tag",
+    "plural": "goat tags",
+    "article": "a",
+    "emoji": "🐐",
+    "longDesc": "greatest of all time",
+    "rarity": 6,
+    "role": "tag",
+    "sell": 50000000,
+    "in_crates": true,
+    "tagId": "goat"
   }
 }
