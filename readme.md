@@ -2,7 +2,7 @@
 
 this repo shows results for [nypsi](https://github.com/tekoh/nypsi) (random) crate/fish/mine/hunt odds. results can be found in [./out/](./out/)
 
-up to date as of 30 october 2022
+up to date as of 10 august 2023
 
 ## results
 
@@ -10,7 +10,17 @@ for each test, it was ran 500,000 times.
 
 [basic crate](./out/basic_crate.txt) (vote&69420 are the same odds)
 
+[mineshaft chest](./out/mineshaft_chest.txt)
+
+[boosters crate](./out/boosters_crate.txt)
+
+[workers crate](./out/workers_crate.txt)
+
 [nypsi crate](./out/nypsi_crate.txt)
+
+[gem crate](./out/gem_crate.txt)
+
+[omega crate](./out/omega_crate.txt)
 
 [terrible fishing rod](./out/terrible_fishing_rod.txt)
 
