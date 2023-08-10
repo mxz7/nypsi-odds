@@ -84,6 +84,7 @@ async function findItemsInCrate(crate: string, items: string[]) {
 promises.push(doCrate("vote_crate"));
 promises.push(doCrate("basic_crate"));
 promises.push(doCrate("nypsi_crate"));
+promises.push(doCrate("omega_crate"));
 promises.push(doCrate("mineshaft_chest"));
 promises.push(doCrate("workers_crate"));
 promises.push(doCrate("boosters_crate"));
