@@ -3,74 +3,40 @@ import percentChance from "./percentChance";
 export function openCrate(itemId: string, found: Map<string, number>, items: { [key: string]: any }) {
   const item = items[itemId];
 
-  const times = item.crate_runs || 1;
-
-  if (item.id.includes("69420")) {
-    found.set("money", 69420);
-  }
+  const crateItems: string[] = [];
+  let mode: "normal" | "percent-based" = "normal";
 
   if (item.items) {
-    for (let i = 0; i < times; i++) {
-      const crateItems: string[] = [];
-      for (const itemFilter of item.items) {
-        let filteredItems: string[] = [];
-        if (itemFilter.startsWith("id:")) {
-          if (itemFilter.split(":")[2]) {
-            if (percentChance(parseInt(itemFilter.split(":")[2]) || 0)) {
-              filteredItems = Object.keys(items).filter((i) => i === itemFilter.split(";")[1]);
-            }
-          } else {
-            filteredItems = Object.keys(items).filter((i) => i === itemFilter.substring(3));
-          }
-        } else if (itemFilter.startsWith("role:")) {
-          filteredItems = Object.keys(items).filter((i) => items[i].role === itemFilter.substring(5));
+    for (const itemFilter of item.items) {
+      let filteredItems: string[] = [];
+      if (itemFilter.startsWith("id:")) {
+        if (itemFilter.split(":")[2]) {
+          mode = "percent-based";
+          break;
         } else {
-          crateItems.push(itemFilter);
-          continue;
+          filteredItems = Object.keys(items).filter((i) => i === itemFilter.substring(3));
         }
-        for (const i of filteredItems) {
-          crateItems.push(i);
-        }
-      }
-
-      const chosen = crateItems[Math.floor(Math.random() * crateItems.length)];
-
-      if (chosen.includes("money:") || chosen.includes("xp:")) {
-        if (chosen.includes("money:")) {
-          const amount = parseInt(chosen.substring(6));
-
-          found.set("money", found.has("money") ? found.get("money") + amount : amount);
-        } else if (chosen.includes("xp:")) {
-          const amount = parseInt(chosen.substring(3));
-
-          found.set("xp", found.has("xp") ? found.get("xp") + amount : amount);
-        }
+      } else if (itemFilter.startsWith("role:")) {
+        filteredItems = Object.keys(items).filter((i) => items[i].role === itemFilter.substring(5));
       } else {
-        let amount = 1;
-
-        if (chosen == "terrible_fishing_rod" || chosen == "terrible_gun" || chosen == "wooden_pickaxe") {
-          amount = 5;
-        } else if (chosen == "fishing_rod" || chosen == "gun" || chosen == "iron_pickaxe") {
-          amount = 10;
-        } else if (chosen == "incredible_fishing_rod" || chosen == "incredible_gun" || chosen == "diamond_pickaxe") {
-          amount = 10;
-        } else if (chosen == "gem_shard" && item.id === "gem_crate") {
-          amount = Math.floor(Math.random() * 15) + 5;
-        }
-
-        found.set(chosen, found.has(chosen) ? found.get(chosen) + amount : amount);
+        crateItems.push(itemFilter);
+        continue;
       }
+
+      crateItems.push(...filteredItems);
     }
   } else {
-    const crateItems: string[] = [];
-
     crateItems.push(...["money:50000", "money:100000", "xp:25", "xp:50"]);
 
     for (const i of Object.keys(items)) {
       if (!items[i].in_crates) continue;
       crateItems.push(i);
     }
+  }
 
+  const times = item.crate_runs || 1;
+
+  if (mode === "normal") {
     for (let i = 0; i < times; i++) {
       const crateItemsModified = [];
 
@@ -169,13 +135,58 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
 
       if (chosen.includes("money:") || chosen.includes("xp:")) {
         if (chosen.includes("money:")) {
-          const amount = parseInt(chosen.substring(6));
-
-          found.set("money", found.has("money") ? found.get("money") + amount : amount);
+          found.set("money", found.has("money") ? found.get("money") + 1 : 1);
         } else if (chosen.includes("xp:")) {
-          const amount = parseInt(chosen.substring(3));
+          found.set("xp", found.has("xp") ? found.get("xp") + 1 : 1);
+        }
+      } else {
+        let amount = 1;
 
-          found.set("xp", found.has("xp") ? found.get("xp") + amount : amount);
+        if (chosen == "terrible_fishing_rod" || chosen == "terrible_gun" || chosen == "wooden_pickaxe") {
+          amount = 5;
+        } else if (chosen == "fishing_rod" || chosen == "gun" || chosen == "iron_pickaxe") {
+          amount = 10;
+        } else if (chosen == "incredible_fishing_rod" || chosen == "incredible_gun" || chosen == "diamond_pickaxe") {
+          amount = 10;
+        } else if (chosen == "gem_shard" && item.id === "gem_crate") {
+          amount = Math.floor(Math.random() * 15) + 5;
+        }
+
+        found.set(chosen, found.has(chosen) ? found.get(chosen) + amount : amount);
+      }
+    }
+  } else {
+    for (let i = 0; i < times; i++) {
+      crateItems.length = 0;
+
+      for (const itemFilter of item.items) {
+        if (parseInt(itemFilter.split(":")[2])) {
+          if (!percentChance(parseInt(itemFilter.split(":")[2]))) {
+            continue;
+          }
+        }
+
+        let filteredItems: string[] = [];
+
+        if (itemFilter.startsWith("id:")) {
+          filteredItems = Object.keys(items).filter((i) => i === itemFilter.split(":")[1]);
+        } else if (itemFilter.startsWith("role:")) {
+          filteredItems = Object.keys(items).filter((i) => items[i].role === itemFilter.split(":")[1]);
+        } else {
+          crateItems.push(itemFilter);
+          continue;
+        }
+
+        crateItems.push(...filteredItems);
+      }
+
+      const chosen = crateItems[Math.floor(Math.random() * crateItems.length)];
+
+      if (chosen.includes("money:") || chosen.includes("xp:")) {
+        if (chosen.includes("money:")) {
+          found.set("money", found.has("money") ? found.get("money") + 1 : 1);
+        } else if (chosen.includes("xp:")) {
+          found.set("xp", found.has("xp") ? found.get("xp") + 1 : 1);
         }
       } else {
         let amount = 1;

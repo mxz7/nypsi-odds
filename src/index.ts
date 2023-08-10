@@ -23,38 +23,44 @@ async function doCrate(crate: string) {
 
 async function doFish(crate: string) {
   console.log(`starting: ${crate}`);
-  let out = await fish(500_000, crate);
+  const start = performance.now();
+  const out = await fish(500_000, crate);
+  const end = performance.now();
 
   try {
     mkdirSync("./out/");
   } catch {}
 
   writeFileSync(`./out/${crate}.txt`, out.join("\n"));
-  console.log(`finished: ${crate}`);
+  console.log(`finished: ${crate} in ${Math.floor((end - start) / 1000)}s`);
 }
 
 async function doHunt(crate: string) {
   console.log(`starting: ${crate}`);
-  let out = await hunt(500_000, crate);
+  const start = performance.now();
+  const out = await hunt(500_000, crate);
+  const end = performance.now();
 
   try {
     mkdirSync("./out/");
   } catch {}
 
   writeFileSync(`./out/${crate}.txt`, out.join("\n"));
-  console.log(`finished: ${crate}`);
+  console.log(`finished: ${crate} in ${Math.floor((end - start) / 1000)}s`);
 }
 
 async function doMine(crate: string) {
   console.log(`starting: ${crate}`);
-  let out = await mine(500_000, crate);
+  const start = performance.now();
+  const out = await mine(500_000, crate);
+  const end = performance.now();
 
   try {
     mkdirSync("./out/");
   } catch {}
 
   writeFileSync(`./out/${crate}.txt`, out.join("\n"));
-  console.log(`finished: ${crate}`);
+  console.log(`finished: ${crate} in ${Math.floor((end - start) / 1000)}s`);
 }
 
 async function findItemsInCrate(crate: string, items: string[]) {
