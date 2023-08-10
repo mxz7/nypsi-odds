@@ -9,14 +9,16 @@ const promises: any[] = [];
 
 async function doCrate(crate: string) {
   console.log(`starting: ${crate}`);
+  const start = performance.now();
   let out = await crates(500_000, crate);
+  const end = performance.now();
 
   try {
     mkdirSync("./out/");
   } catch {}
 
   writeFileSync(`./out/${crate}.txt`, out.join("\n"));
-  console.log(`finished: ${crate}`);
+  console.log(`finished: ${crate} in ${Math.floor((end - start) / 1000)}s`);
 }
 
 async function doFish(crate: string) {
