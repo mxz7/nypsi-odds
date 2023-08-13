@@ -52,7 +52,7 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
           }
 
           if (items[i].rarity === 6) {
-            const chance = Math.floor(Math.random() * 500);
+            const chance = Math.floor(Math.random() * 750);
 
             if (chance == 7) crateItemsModified.push(i);
           } else if (items[i].rarity == 5) {
@@ -160,8 +160,8 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
       crateItems.length = 0;
 
       for (const itemFilter of item.items) {
-        if (parseInt(itemFilter.split(":")[2])) {
-          if (!percentChance(parseInt(itemFilter.split(":")[2]))) {
+        if (parseFloat(itemFilter.split(":")[2])) {
+          if (!percentChance(parseFloat(itemFilter.split(":")[2]))) {
             continue;
           }
         }
