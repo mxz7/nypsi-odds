@@ -54,10 +54,32 @@ if (!isMainThread) {
   function openCrate(gun: string) {
     const huntItems = Array.from(Object.keys(items));
 
-    const times = 1;
+    let times = 1;
 
     for (let i = 0; i < 15; i++) {
       huntItems.push("nothing");
+    }
+
+    const places = [
+      "field",
+      "forest",
+      "african plains",
+      "amazon rainforest",
+      "field",
+      "forest",
+      "field",
+      "forest",
+      "field",
+      "forest",
+      "nether",
+    ];
+
+    const chosenPlace = places[Math.floor(Math.random() * places.length)];
+
+    if (gun == "gun") {
+      times = 2;
+    } else if (gun == "incredible_gun") {
+      times = 3;
     }
 
     for (let i = 0; i < times; i++) {
@@ -66,7 +88,19 @@ if (!isMainThread) {
       for (const i of huntItems) {
         if (items[i]) {
           if (items[i].role != "prey") continue;
-          if (items[i].rarity == 4) {
+          if (chosenPlace === "nether") {
+            if (!["blaze", "wither_skeleton", "piglin", "ghast"].includes(i)) continue;
+          } else {
+            if (["blaze", "wither_skeleton", "piglin", "ghast"].includes(i)) continue;
+          }
+          if (items[i].rarity === 5) {
+            const chance = Math.floor(Math.random() * 100);
+            if (chance == 7 && gun == "incredible_gun") {
+              for (let x = 0; x < Math.floor(Math.random() * 5); x++) {
+                huntItemsModified.push(i);
+              }
+            }
+          } else if (items[i].rarity == 4) {
             const chance = Math.floor(Math.random() * 15);
             if (chance == 4 && gun == "incredible_gun") {
               for (let x = 0; x < 4; x++) {

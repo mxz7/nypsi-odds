@@ -63,14 +63,21 @@ if (!isMainThread) {
       "nether",
       "nether",
       "nether",
+      "end",
     ];
 
     const chosenArea = areas[Math.floor(Math.random() * areas.length)];
 
-    const times = 1;
+    let times = 1;
 
     for (let i = 0; i < 20; i++) {
       mineItems.push("nothing");
+    }
+
+    if (pickaxe == "iron_pickaxe") {
+      times = 2;
+    } else if (pickaxe == "diamond_pickaxe") {
+      times = 3;
     }
 
     for (let i = 0; i < times; i++) {
@@ -80,6 +87,8 @@ if (!isMainThread) {
         if (items[i]) {
           if (chosenArea == "nether") {
             if (!["netherrack", "ancient_debris", "quartz", "gold_nugget"].includes(items[i].id)) continue;
+          } else if (chosenArea === "end") {
+            if (!["end_stone", "purpur", "obsidian", "dragon_egg"].includes(items[i].id)) continue;
           } else {
             if (
               ![
