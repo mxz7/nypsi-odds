@@ -94,9 +94,9 @@ if (!isMainThread) {
             if (["blaze", "wither_skeleton", "piglin", "ghast"].includes(i)) continue;
           }
           if (items[i].rarity === 5) {
-            const chance = Math.floor(Math.random() * 50);
+            const chance = Math.floor(Math.random() * 30);
             if (chance == 7 && gun == "incredible_gun") {
-              for (let x = 0; x < Math.floor(Math.random() * 5); x++) {
+              for (let x = 0; x < Math.floor(Math.random() * 10); x++) {
                 huntItemsModified.push(i);
               }
             }

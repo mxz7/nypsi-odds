@@ -2,7 +2,7 @@
 
 this repo shows results for [nypsi](https://github.com/tekoh/nypsi) (random) crate/fish/mine/hunt odds. results can be found in [./out/](./out/)
 
-up to date as of 20 september 2023
+up to date as of 5 october 2023
 
 ## results
 
