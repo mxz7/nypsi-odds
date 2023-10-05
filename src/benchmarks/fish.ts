@@ -75,10 +75,7 @@ if (!isMainThread) {
     ];
 
     for (const i of Array.from(Object.keys(items))) {
-      if (items[i].role == "prey") continue;
-      if (items[i].role == "tool") continue;
-      if (items[i].role == "car") continue;
-      if (items[i].role == "booster") continue;
+      if (["booster", "car", "tool", "prey", "sellable", "ore"].includes(items[i].role)) continue;
       if (items[i].id == "crystal_heart") continue;
       if (items[i].role == "crate" && !percentChance(20)) continue;
       if (items[i].id.includes("gem") && !percentChance(0.77)) continue;
