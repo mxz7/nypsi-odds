@@ -38,19 +38,10 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
 
   if (mode === "normal") {
     for (let i = 0; i < times; i++) {
-      const crateItemsModified = [];
+      const crateItemsModified: string[] = [];
 
       for (const i of crateItems) {
         if (items[i]) {
-          if (
-            item.id == "nypsi_crate" &&
-            (["collectable", "sellable", "item", "car"].includes(items[i].role) || items[i].buy)
-          ) {
-            const chance = Math.floor(Math.random() * 7);
-
-            if (chance != 2) continue;
-          }
-
           if (items[i].rarity === 6) {
             const chance = Math.floor(Math.random() * 1500);
 
@@ -61,51 +52,26 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
             if (chance == 7) crateItemsModified.push(i);
           } else if (items[i].rarity == 4) {
             const chance = Math.floor(Math.random() * 15);
-            if (chance == 4) {
-              crateItemsModified.push(i);
-            } else if (chance > 7 && item.id == "nypsi_crate") {
-              for (let x = 0; x < 3; x++) {
-                crateItemsModified.push(i);
-              }
-            }
+            if (chance == 4) crateItemsModified.push(i);
           } else if (items[i].rarity == 3) {
             const chance = Math.floor(Math.random() * 3);
-            if (chance == 2) {
-              crateItemsModified.push(i);
-            } else if (item.id == "nypsi_crate") {
-              for (let x = 0; x < 3; x++) {
-                crateItemsModified.push(i);
-              }
-            }
+            if (chance == 2) crateItemsModified.push(i);
           } else if (items[i].rarity == 2) {
-            if (item.id == "nypsi_crate") {
-              for (let x = 0; x < 5; x++) {
-                crateItemsModified.push(i);
-              }
-            }
             crateItemsModified.push(i);
           } else if (items[i].rarity == 1) {
             for (let x = 0; x < 2; x++) {
-              if (items[i].role == "collectable" && item.id != "nypsi_crate") {
+              if (items[i].role == "collectable") {
                 const chance = Math.floor(Math.random() * 3);
 
                 if (chance == 2) {
                   crateItemsModified.push(i);
                 }
               } else {
-                if (item.id == "nypsi_crate") {
-                  const chance = Math.floor(Math.random() * 10);
-
-                  if (chance < 7) {
-                    crateItemsModified.push(i);
-                  }
-                } else {
-                  crateItemsModified.push(i);
-                }
+                crateItemsModified.push(i);
               }
               crateItemsModified.push(i);
             }
-          } else if (items[i].rarity == 0 && item.id != "nypsi_crate") {
+          } else if (items[i].rarity == 0) {
             if (items[i].role == "collectable") {
               const chance = Math.floor(Math.random() * 3);
 
@@ -118,12 +84,6 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
             crateItemsModified.push(i);
           }
         } else {
-          if (item.id == "nypsi_crate") {
-            for (let x = 0; x < 6; x++) {
-              crateItemsModified.push("money:10000000");
-              crateItemsModified.push("xp:750");
-            }
-          }
           for (let x = 0; x < 2; x++) {
             crateItemsModified.push(i);
             crateItemsModified.push(i);
@@ -142,15 +102,17 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
       } else {
         let amount = 1;
 
-        if (chosen == "terrible_fishing_rod" || chosen == "terrible_gun" || chosen == "wooden_pickaxe") {
-          amount = 5;
-        } else if (chosen == "fishing_rod" || chosen == "gun" || chosen == "iron_pickaxe") {
-          amount = 10;
-        } else if (chosen == "incredible_fishing_rod" || chosen == "incredible_gun" || chosen == "diamond_pickaxe") {
-          amount = 10;
-        } else if (chosen == "gem_shard" && item.id === "gem_crate") {
-          amount = Math.floor(Math.random() * 15) + 5;
-        }
+        // if (chosen == "terrible_fishing_rod" || chosen == "terrible_gun" || chosen == "wooden_pickaxe") {
+        //   amount = 5;
+        // } else if (chosen == "fishing_rod" || chosen == "gun" || chosen == "iron_pickaxe") {
+        //   amount = 10;
+        // } else if (chosen == "incredible_fishing_rod" || chosen == "incredible_gun" || chosen == "diamond_pickaxe") {
+        //   amount = 10;
+        // } else if (chosen == "gem_shard" && item.id === "gem_crate") {
+        //   amount = Math.floor(Math.random() * 15) + 5;
+        // }
+
+        // DONT DO ABOVE CAUSE THIS IS ONLY TESTING FOR ODDS
 
         found.set(chosen, found.has(chosen) ? found.get(chosen) + amount : amount);
       }
@@ -191,15 +153,17 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
       } else {
         let amount = 1;
 
-        if (chosen == "terrible_fishing_rod" || chosen == "terrible_gun" || chosen == "wooden_pickaxe") {
-          amount = 5;
-        } else if (chosen == "fishing_rod" || chosen == "gun" || chosen == "iron_pickaxe") {
-          amount = 10;
-        } else if (chosen == "incredible_fishing_rod" || chosen == "incredible_gun" || chosen == "diamond_pickaxe") {
-          amount = 10;
-        } else if (chosen == "gem_shard" && item.id === "gem_crate") {
-          amount = Math.floor(Math.random() * 15) + 5;
-        }
+        // if (chosen == "terrible_fishing_rod" || chosen == "terrible_gun" || chosen == "wooden_pickaxe") {
+        //   amount = 5;
+        // } else if (chosen == "fishing_rod" || chosen == "gun" || chosen == "iron_pickaxe") {
+        //   amount = 10;
+        // } else if (chosen == "incredible_fishing_rod" || chosen == "incredible_gun" || chosen == "diamond_pickaxe") {
+        //   amount = 10;
+        // } else if (chosen == "gem_shard" && item.id === "gem_crate") {
+        //   amount = Math.floor(Math.random() * 15) + 5;
+        // }
+
+        // DONT DO ABOVE CAUSE THIS IS FOR ODDS TESTING ONLY
 
         found.set(chosen, found.has(chosen) ? found.get(chosen) + amount : amount);
       }
