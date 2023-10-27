@@ -133,6 +133,8 @@ if (!isMainThread) {
               }
             }
           }
+        } else {
+          huntItemsModified.push(i);
         }
       }
       const chosen = huntItemsModified[Math.floor(Math.random() * huntItemsModified.length)];
