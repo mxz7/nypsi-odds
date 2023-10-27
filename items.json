@@ -114,7 +114,7 @@
     "role": "sellable",
     "rarity": 0,
     "buy": 0,
-    "sell": 1600,
+    "sell": 2000,
     "in_crates": false
   },
   "purpur": {
@@ -127,7 +127,20 @@
     "role": "sellable",
     "rarity": 1,
     "buy": 0,
-    "sell": 5000,
+    "sell": 15000,
+    "in_crates": false
+  },
+  "chorus": {
+    "id": "chorus",
+    "name": "chorus fruit",
+    "article": "a",
+    "plural": "chorus fruits",
+    "emoji": "<:nypsi_chorus:1162013496783941713>",
+    "longDesc": "found when mining in the end",
+    "role": "sellable",
+    "rarity": 2,
+    "buy": 0,
+    "sell": 35000,
     "in_crates": false
   },
   "dragon_egg": {
@@ -140,7 +153,7 @@
     "role": "sellable",
     "rarity": 3,
     "buy": 0,
-    "sell": 150000,
+    "sell": 250000,
     "in_crates": false
   },
   "coal": {
@@ -291,7 +304,7 @@
     "role": "sellable",
     "rarity": 1,
     "buy": 0,
-    "sell": 17500,
+    "sell": 11500,
     "in_crates": false
   },
   "gold_ore": {
@@ -921,7 +934,7 @@
     "boosterEffect": {
       "boosts": ["xp"],
       "effect": 0.5,
-      "time": 300
+      "time": 150
     },
     "in_crates": false
   },
@@ -1375,8 +1388,8 @@
     "buy": 0,
     "sell": 75000,
     "role": "booster",
-    "stackable": false,
-    "max": 1,
+    "stackable": true,
+    "max": 2,
     "boosterEffect": {
       "boosts": ["hunt"],
       "effect": 1,
@@ -1693,9 +1706,9 @@
     "name": "steve",
     "article": "a",
     "plural": "steves",
-    "aliases": ["stevieee", "stephen", "stephen", "maxsdad", "ste_ste_ste"],
+    "aliases": ["stevieee", "stephen", "steven", "maxsdad", "ste_ste_ste"],
     "emoji": "👷🏻‍♂️",
-    "longDesc": "steve will automatically claim money from your workers for you\neveryone loves steve",
+    "longDesc": "steve will automatically claim money from your workers for you for 24h\neveryone loves steve",
     "rarity": 3,
     "sell": 1000000,
     "role": "booster",
@@ -2039,7 +2052,7 @@
     "clicks": 3,
     "items": [
       "money:1000000",
-      "xp:250",
+      "xp:300",
       "karma:75",
       "id:calendar:35",
       "id:bob",
@@ -2078,7 +2091,7 @@
     "clicks": 6,
     "items": [
       "money:2500000",
-      "xp:150",
+      "xp:500",
       "id:calendar:60",
       "id:bob",
       "id:lucky_7:40",
@@ -2162,8 +2175,8 @@
     "clicks": 9,
     "items": [
       "money:3000000",
-      "xp:175",
-      "karma:25",
+      "xp:750",
+      "karma:50",
       "id:super_cursor",
       "id:oven",
       "id:bob",
@@ -2171,14 +2184,20 @@
       "id:incredible_fishing_rod:95",
       "id:incredible_gun:90",
       "id:69420_crate",
-      "id:nypsi_crate:30",
+      "id:nypsi_crate:40",
       "id:silver_credit:5",
       "id:gold_credit:3",
       "id:pink_gem:1",
+      "id:gem_shard:75",
+      "id:quarry_scrap:75",
       "id:karma_scratch_card:5",
       "id:omega_crate:1",
       "id:karma_tag:5",
-      "id:reroll_token:7"
+      "id:reroll_token:7",
+      "id:lucky_cheese:50",
+      "id:xp_potion:50",
+      "id:double_xp:15",
+      "id:multi_potion:40"
     ],
     "random_drop_chance": 50
   },
@@ -2198,7 +2217,7 @@
     "clicks": 4,
     "items": [
       "money:500000",
-      "xp:100",
+      "xp:250",
       "id:lawyer",
       "id:diamond",
       "id:cookie",
@@ -2650,6 +2669,7 @@
     "longDesc": "uwu",
     "rarity": 3,
     "role": "collectable",
+    "aliases": ["tiddy", "goth", "gf"],
     "in_crates": true
   },
   "blaze_rod": {
@@ -2663,22 +2683,23 @@
     "role": "resource",
     "in_crates": false,
     "craft": {
-      "time": 7200,
+      "time": 3600,
       "ingredients": ["blaze:3"]
     }
   },
   "ender_pearl": {
     "id": "ender_pearl",
-    "name": "ender peal",
+    "name": "ender pearl",
     "article": "an",
-    "plural": "ender peals",
+    "plural": "ender pearls",
     "emoji": "<:nypsi_enderpearl:1158003398998753361>",
     "longDesc": "used to create eyes of ender",
     "rarity": 69,
     "role": "resource",
+    "aliases": ["pearl", "epearl"],
     "in_crates": false,
     "craft": {
-      "time": 14400,
+      "time": 10800,
       "ingredients": ["enderman:2"]
     }
   },
@@ -2694,7 +2715,7 @@
     "sell": 200000,
     "in_crates": false,
     "craft": {
-      "time": 600,
+      "time": 450,
       "ingredients": ["wither_skeleton:2"]
     }
   },
@@ -2702,11 +2723,12 @@
     "id": "eye_of_ender",
     "name": "eye of ender",
     "article": "an",
-    "plural": "eye of enders",
+    "plural": "eyes of ender",
     "emoji": "<:nypsi_eye_ender:1158003799361863690>",
     "longDesc": "used to create an end portal",
     "rarity": 69,
     "role": "resource",
+    "aliases": ["eye", "ender", "endereye", "ender_eye"],
     "in_crates": false,
     "sell": 100000,
     "craft": {
