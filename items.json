@@ -101,7 +101,7 @@
     "role": "sellable",
     "rarity": 0,
     "buy": 0,
-    "sell": 900,
+    "sell": 750,
     "in_crates": false
   },
   "end_stone": {
@@ -114,7 +114,7 @@
     "role": "sellable",
     "rarity": 0,
     "buy": 0,
-    "sell": 2000,
+    "sell": 3000,
     "in_crates": false
   },
   "purpur": {
@@ -404,7 +404,7 @@
     "longDesc": "allows you to mine",
     "aliases": ["diamondpick", "dpick"],
     "role": "tool",
-    "rarity": 2,
+    "rarity": 3,
     "buy": 0,
     "sell": 10000,
     "in_crates": true,
@@ -447,7 +447,7 @@
     "longDesc": "allows you to fish with amazing luck",
     "aliases": ["ifishing", "ifish"],
     "role": "tool",
-    "rarity": 2,
+    "rarity": 3,
     "buy": 0,
     "sell": 10000,
     "in_crates": true,
@@ -513,7 +513,7 @@
     "longDesc": "allows you to hunt with amazing luck",
     "aliases": ["igun", "ak47"],
     "role": "tool",
-    "rarity": 2,
+    "rarity": 3,
     "buy": 0,
     "sell": 10000,
     "in_crates": true,
@@ -845,8 +845,8 @@
     "in_crates": true,
     "random_drop_chance": 50,
     "items": [
-      "id:unbreaking:30",
-      "id:highroller:55",
+      "id:unbreaking:20",
+      "id:highroller:30",
       "id:double_xp:25",
       "id:xp_potion:50",
       "id:omega_crate:1",
@@ -856,29 +856,31 @@
       "id:bronze_credit:4",
       "id:nypsi_crate:10",
       "id:gem_shard:10",
-      "id:palm_tree:2",
       "id:clown_tag:0.1",
       "id:steve:50",
       "id:coffee:50",
       "id:cookie:5",
       "id:legendary_scratch_card:15",
-      "id:lucky_cheese:15",
+      "id:lucky_cheese:10",
       "money:10000000",
       "money:50000000:45",
       "xp:1000",
-      "id:multi_potion:50",
-      "id:lucky_7:20",
-      "id:lucky_scratch_card:45",
+      "id:multi_potion:40",
+      "id:lucky_7:17",
+      "id:lucky_scratch_card:40",
       "id:redbull:25",
       "id:incredible_gun:50",
       "id:incredible_fishing_rod:50",
       "id:cursor:65",
       "id:grandma:65",
+      "id:lamborghini:20",
       "id:orphan:50",
+      "id:big_tiddy_goth_gf:75",
       "id:viagra:30",
       "id:looting:30",
       "id:super_cursor:20",
-      "id:bob:80"
+      "id:bob:80",
+      "id:stolen_credit_card"
     ]
   },
   "calendar": {
@@ -889,7 +891,7 @@
     "emoji": "📅",
     "longDesc": "protects your daily streak in the event you forget to do /daily",
     "role": "item",
-    "rarity": 3,
+    "rarity": 4,
     "buy": 0,
     "sell": 100000,
     "in_crates": true
@@ -979,6 +981,7 @@
     "name": "tooth",
     "article": "a",
     "plural": "teeth",
+    "aliases": ["teef", "toof", "toofer", "teefers"],
     "emoji": "🦷",
     "longDesc": "its a molar i think",
     "rarity": 1,
@@ -2139,6 +2142,8 @@
       "id:cursor:70",
       "id:super_cursor:50",
       "id:oven:30",
+      "id:lamborghini:5",
+      "id:mini_cooper:60",
       "id:diamond_pickaxe:50",
       "id:iron_pickaxe:75",
       "id:incredible_fishing_rod:50",
@@ -2180,6 +2185,7 @@
       "id:lucky_7:80",
       "id:incredible_fishing_rod",
       "id:incredible_gun",
+      "id:lamborghini:90",
       "id:quarry_scrap",
       "id:nypsi_crate:50",
       "id:platinum_credit:0.5",
@@ -2278,7 +2284,9 @@
       "id:boosters_crate:3",
       "id:bronze_credit:0.1",
       "id:purple_gem:0.1",
-      "id:quarry_scrap:3"
+      "id:quarry_scrap:3",
+      "id:big_tiddy_goth_gf:20",
+      "id:69420_crate:40"
     ]
   },
   "bob": {
@@ -2431,7 +2439,7 @@
     "aliases": ["cheese"],
     "emoji": "🧀",
     "longDesc": "increase your sell multiplier by 5% for 30 minutes (stacks to 10)",
-    "rarity": 4,
+    "rarity": 5,
     "buy": 0,
     "sell": 100000,
     "role": "booster",
@@ -2470,30 +2478,6 @@
     "in_crates": true,
     "tagId": "cat"
   },
-  "discordian_tag": {
-    "id": "discordian_tag",
-    "name": "discordian tag",
-    "plural": "discordian tags",
-    "article": "a",
-    "emoji": "🤓",
-    "longDesc": "meow",
-    "role": "tag",
-    "sell": 1000000,
-    "in_crates": false,
-    "tagId": "discordian"
-  },
-  "nypsi_tag": {
-    "id": "nypsi_tag",
-    "name": "nypsi tag",
-    "plural": "nypsi tags",
-    "article": "a",
-    "emoji": "<:xnypsi:1135923012458254416>",
-    "longDesc": "nerd lol",
-    "role": "tag",
-    "sell": 1000000,
-    "in_crates": false,
-    "tagId": "nypsi"
-  },
   "clown_tag": {
     "id": "clown_tag",
     "name": "clown tag",
@@ -2522,8 +2506,8 @@
     "in_crates": true,
     "random_drop_chance": 0.1,
     "items": [
-      "id:omega_tag:70",
-      "id:unbreaking",
+      "id:infinity_tag:70",
+      "id:unbreaking:90",
       "id:highroller",
       "id:double_xp",
       "id:gem_crate:25",
@@ -2545,7 +2529,7 @@
       "id:cat_tag:1",
       "id:clown_tag:2",
       "id:steve:75",
-      "id:coffee:75",
+      "id:coffee:40",
       "id:cookie:3",
       "id:legendary_scratch_card:90",
       "id:lucky_cheese",
@@ -2555,21 +2539,22 @@
       "id:multi_potion",
       "id:skyline_r34:85",
       "id:lucky_7:95",
+      "id:lamborghini:60",
       "id:reroll_token:20"
     ]
   },
-  "omega_tag": {
-    "id": "omega_tag",
-    "name": "omega tag",
-    "plural": "omega tags",
+  "infinity_tag": {
+    "id": "infinity_tag",
+    "name": "infinity tag",
+    "plural": "infinity tags",
     "article": "an",
-    "emoji": "<:nypsi_omega:1139279162276855890>",
+    "emoji": "♾️",
     "longDesc": "found in the omega crate",
     "rarity": 6,
     "role": "tag",
     "sell": 5000000,
     "in_crates": false,
-    "tagId": "omega"
+    "tagId": "infinity"
   },
   "karma_tag": {
     "id": "karma_tag",
@@ -2584,83 +2569,19 @@
     "in_crates": false,
     "tagId": "karma"
   },
-  "ninja_tag": {
-    "id": "ninja_tag",
-    "name": "ninja tag",
-    "plural": "ninja tags",
+  "hanafuda_tag": {
+    "id": "hanafuda_tag",
+    "name": "hanafuda tag",
+    "plural": "hanafuda tags",
     "article": "a",
-    "emoji": "🥷",
-    "longDesc": "found from the robber v achievement",
+    "emoji": "🎴",
+    "longDesc": "found in loot drops",
     "rarity": 6,
     "role": "tag",
     "sell": 5000000,
     "in_crates": false,
-    "tagId": "ninja"
-  },
-  "cherry_tag": {
-    "id": "cherry_tag",
-    "name": "cherry tag",
-    "plural": "cherry tags",
-    "article": "a",
-    "emoji": "🍒",
-    "longDesc": "found from the slots pro v achievement",
-    "rarity": 6,
-    "role": "tag",
-    "sell": 5000000,
-    "in_crates": false,
-    "tagId": "cherry"
-  },
-  "spades_tag": {
-    "id": "spades_tag",
-    "name": "spades tag",
-    "plural": "spades tags",
-    "article": "a",
-    "emoji": "♠️",
-    "longDesc": "found from the blackjack v achievement",
-    "rarity": 6,
-    "role": "tag",
-    "sell": 5000000,
-    "in_crates": false,
-    "tagId": "spades"
-  },
-  "bomb_tag": {
-    "id": "bomb_tag",
-    "name": "bomb tag",
-    "plural": "bomb tags",
-    "article": "a",
-    "emoji": "💣",
-    "longDesc": "found from the mines v achievement",
-    "rarity": 6,
-    "role": "tag",
-    "sell": 5000000,
-    "in_crates": false,
-    "tagId": "bomb"
-  },
-  "cum_tag": {
-    "id": "cum_tag",
-    "name": "cum tag",
-    "plural": "cum tags",
-    "article": "a",
-    "emoji": "<:nypsi_cum:1142769642352414780>",
-    "longDesc": "found from the horny v achievement",
-    "rarity": 6,
-    "role": "tag",
-    "sell": 5000000,
-    "in_crates": false,
-    "tagId": "cum"
-  },
-  "dog_tag": {
-    "id": "dog_tag",
-    "name": "dog tag",
-    "plural": "dog tags",
-    "article": "a",
-    "emoji": "🐶",
-    "longDesc": "found from the cute v achievement",
-    "rarity": 6,
-    "role": "tag",
-    "sell": 5000000,
-    "in_crates": false,
-    "tagId": "dog"
+    "tagId": "hanafuda",
+    "random_drop_chance": 0.001
   },
   "xp_booster": {
     "id": "xp_booster",
@@ -2786,5 +2707,35 @@
       "time": 259200,
       "ingredients": ["eye_of_ender:12"]
     }
+  },
+  "mini_cooper": {
+    "id": "mini_cooper",
+    "name": "mini cooper",
+    "plural": "minis",
+    "article": "a",
+    "emoji": "<:nypsi_mini:1206639656431657030>",
+    "longDesc": "mr bean",
+    "rarity": 1,
+    "role": "car",
+    "speed": 2,
+    "aliases": ["mini"],
+    "buy": 0,
+    "sell": 17500,
+    "in_crates": true
+  },
+  "lamborghini": {
+    "id": "lamborghini",
+    "name": "lamborghini aventador",
+    "plural": "lamborghinis",
+    "article": "a",
+    "emoji": "<:nypsi_lambo:1207439589011357796>",
+    "longDesc": "NYYOOWWMMMMM",
+    "rarity": 5,
+    "role": "car",
+    "speed": 7,
+    "aliases": ["lambo", "aventador"],
+    "buy": 0,
+    "sell": 100000,
+    "in_crates": false
   }
 }
