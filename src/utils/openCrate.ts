@@ -43,7 +43,7 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
       for (const i of crateItems) {
         if (items[i]) {
           if (items[i].rarity === 6) {
-            const chance = Math.floor(Math.random() * 1500);
+            const chance = Math.floor(Math.random() * 2000);
 
             if (chance == 7) crateItemsModified.push(i);
           } else if (items[i].rarity == 5) {
