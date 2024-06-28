@@ -988,6 +988,18 @@
     "role": "collectable",
     "in_crates": true
   },
+  "galvanised_square_steel": {
+    "id": "galvanised_square_steel",
+    "name": "galvanised square steel",
+    "article": "a",
+    "plural": "galvanised square steel",
+    "aliases": ["galvanised", "steel"],
+    "emoji": "<:nypsi_galvanised_square_steel:1255597224361070783>",
+    "longDesc": "eco friendly wood veneer and screws from your aunt",
+    "rarity": 1,
+    "role": "collectable",
+    "in_crates": true
+  },
   "bitch": {
     "id": "bitch",
     "name": "bitch",
@@ -1945,7 +1957,7 @@
     "name": "super cursor",
     "article": "a",
     "plural": "super cursors",
-    "aliases": ["super_pointer", "super pointer"],
+    "aliases": ["super_pointer", "super pointer", "scursor"],
     "emoji": "<:super_cursor:1090263183278739517>",
     "longDesc": "+1 min & max cookie when baking",
     "rarity": 3,
@@ -2092,6 +2104,7 @@
       "money:1000000",
       "xp:300",
       "karma:75",
+      "id:galvanised_square_steel:50",
       "id:calendar:35",
       "id:bob",
       "id:streak_token:50",
@@ -2106,13 +2119,12 @@
       "id:gun:75",
       "id:basic_crate:70",
       "id:69420_crate:65",
-      "id:bronze_credit:0.7",
+      "id:bronze_credit:0.5",
       "id:quarry_scrap:4",
-      "id:green_gem:1",
-      "id:blue_gem:1",
-      "id:pink_gem:0.3",
+      "id:gem_shard:0.5",
+      "id:blue_gem:0.5",
       "id:lucky_cheese:5",
-      "id:reroll_token:0.1"
+      "id:reroll_token:0.05"
     ]
   },
   "lucky_scratch_card": {
@@ -2153,10 +2165,10 @@
       "id:incredible_gun:75",
       "id:basic_crate:95",
       "id:69420_crate:90",
-      "id:nypsi_crate:20",
-      "id:bronze_credit:1",
-      "id:silver_credit:0.5",
-      "id:omega_crate:0.1"
+      "id:nypsi_crate:10",
+      "id:bronze_credit:0.7",
+      "id:gem_shard:0.9",
+      "id:omega_crate:0.05"
     ],
     "random_drop_chance": 90
   },
@@ -2193,13 +2205,14 @@
       "id:bronze_credit:3",
       "id:silver_credit:2",
       "id:gold_credit:1",
-      "id:pink_gem:3",
+      "id:purple_gem:3",
       "id:gem_shard:50",
-      "id:gem_crate:2.5",
+      "id:gem_crate:2",
       "id:omega_crate:2",
-      "id:cat_tag:0.5",
+      "id:cat_tag:0.1",
       "id:ferrari_skin:10",
-      "id:reroll_token:4"
+      "id:reroll_token:4",
+      "id:veilside_rx7_skin:5"
     ],
     "random_drop_chance": 40
   },
@@ -2228,21 +2241,20 @@
       "id:incredible_gun:90",
       "id:69420_crate",
       "id:nypsi_crate:40",
-      "id:silver_credit:2",
-      "id:gold_credit:1",
-      "id:pink_gem:1",
+      "id:bronze_credit:1",
+      "id:pink_gem:0.7",
       "id:gem_shard:75",
       "id:quarry_scrap:75",
       "id:karma_scratch_card:5",
       "id:omega_crate:1",
       "id:karma_tag:5",
-      "id:reroll_token:7",
+      "id:reroll_token:5",
       "id:lucky_cheese:50",
       "id:xp_potion:50",
       "id:double_xp:15",
-      "id:multi_potion:40"
-    ],
-    "random_drop_chance": 50
+      "id:multi_potion:40",
+      "id:veilside_rx7_skin:10"
+    ]
   },
   "corner_shop_scratchie": {
     "id": "corner_shop_scratchie",
@@ -2265,6 +2277,7 @@
       "id:diamond",
       "id:cookie",
       "id:worm",
+      "id:galvanised_square_steel",
       "id:blue_rocks:65",
       "karma:15:85",
       "id:ancient_debris:60",
@@ -2284,8 +2297,6 @@
       "id:basic_crate:15",
       "id:workers_crate:3",
       "id:boosters_crate:3",
-      "id:bronze_credit:0.1",
-      "id:purple_gem:0.1",
       "id:quarry_scrap:3",
       "id:big_tiddy_goth_gf:20",
       "id:69420_crate:40"
@@ -2529,8 +2540,8 @@
       "id:green_gem:75",
       "id:gem_shard:90",
       "id:palm_tree:10",
-      "id:goat_tag:0.5",
-      "id:cat_tag:1",
+      "id:goat_tag:0.1",
+      "id:cat_tag:0.5",
       "id:clown_tag:2",
       "id:bugatti_skin:15",
       "id:ferrari_skin:15",
@@ -2862,7 +2873,7 @@
     "upgrades": "engine",
     "sell": 100000,
     "craft": {
-      "ingredients": ["engine_upgrade_part:10"],
+      "ingredients": ["engine_upgrade_part:15"],
       "time": 172800
     },
     "in_crates": false
@@ -2878,7 +2889,8 @@
     "rarity": 5,
     "role": "car_part",
     "sell": 10000,
-    "in_crates": true
+    "in_crates": true,
+    "random_drop_chance": 10
   },
   "turbo_upgrade": {
     "id": "turbo_upgrade",
@@ -2908,7 +2920,8 @@
     "rarity": 5,
     "role": "car_part",
     "sell": 10000,
-    "in_crates": true
+    "in_crates": true,
+    "random_drop_chance": 10
   },
   "wheel_upgrade": {
     "id": "wheel_upgrade",
@@ -2951,7 +2964,8 @@
     "role": "car_skin",
     "sell": 100000,
     "in_crates": true,
-    "rarity": 5
+    "rarity": 5,
+    "random_drop_chance": 15
   },
   "ferrari_skin": {
     "id": "ferrari_skin",
@@ -2964,7 +2978,8 @@
     "role": "car_skin",
     "sell": 100000,
     "in_crates": true,
-    "rarity": 5
+    "rarity": 5,
+    "random_drop_chance": 5
   },
   "bugatti_skin": {
     "id": "bugatti_skin",
@@ -2978,5 +2993,47 @@
     "sell": 100000,
     "in_crates": true,
     "rarity": 5
+  },
+  "rx7_skin": {
+    "id": "rx7_skin",
+    "name": "rx7 skin",
+    "plural": "rx7 skins",
+    "article": "an",
+    "aliases": ["rx7"],
+    "emoji": "<:nypsi_rx7:1229104303738851518>",
+    "longDesc": "rx7 car skin for custom cars",
+    "role": "car_skin",
+    "sell": 100000,
+    "in_crates": true,
+    "rarity": 5,
+    "random_drop_chance": 15
+  },
+  "veilside_rx7_skin": {
+    "id": "veilside_rx7_skin",
+    "name": "veilside rx7 skin",
+    "plural": "veilside skins",
+    "article": "a",
+    "aliases": ["veilside"],
+    "emoji": "<:nypsi_veilside_rx7:1253785772331372624>",
+    "longDesc": "veilside rx7 car skin for custom cars",
+    "role": "car_skin",
+    "sell": 100000,
+    "in_crates": false,
+    "rarity": 10,
+    "random_drop_chance": 10
+  },
+  "ford_transit_skin": {
+    "id": "ford_transit_skin",
+    "name": "ford transit skin",
+    "plural": "ford transit skins",
+    "article": "a",
+    "aliases": ["transit"],
+    "emoji": "<:nypsi_ford_transit:1255516012242014259>",
+    "longDesc": "ford transit car skin for custom cars 😜",
+    "role": "car_skin",
+    "sell": 100000,
+    "in_crates": false,
+    "rarity": 10,
+    "random_drop_chance": 10
   }
 }
