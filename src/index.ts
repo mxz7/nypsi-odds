@@ -38,7 +38,7 @@ async function doFish(crate: string) {
 async function doHunt(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const out = await hunt(500_000, crate);
+  const out = await hunt(1_000_000, crate);
   const end = performance.now();
 
   try {
@@ -52,7 +52,7 @@ async function doHunt(crate: string) {
 async function doMine(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const out = await mine(500_000, crate);
+  const out = await mine(1_000_000, crate);
   const end = performance.now();
 
   try {
@@ -87,7 +87,7 @@ async function findItemsInCrate(crate: string, items: string[]) {
 }
 
 // findItemsInCrate("nypsi_crate", ["goat_tag", "cat_tag"]);
-// findItemsInCrate("basic_crate", ["grandma", "cursor"]);
+// findItemsInCrate("basic_crate", ["cat_tag", "goat_tag"]);
 
 promises.push(doCrate("vote_crate"));
 promises.push(doCrate("basic_crate"));
