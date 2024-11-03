@@ -10,7 +10,7 @@ const promises: any[] = [];
 async function doCrate(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  let out = await crates(100_000, crate);
+  let out = await crates(10_000_000, crate);
   const end = performance.now();
 
   try {
