@@ -2,11 +2,9 @@
 
 this repo shows results for [nypsi](https://github.com/tekoh/nypsi) (random) crate/fish/mine/hunt odds. results can be found in [./out/](./out/)
 
-up to date as of 30 oct 2024
+up to date as of 3 nov 2024
 
 ## results
-
-for each test, it was ran 500,000 times.
 
 [basic crate](./out/basic_crate.txt) (vote&69420 are the same odds)
 
