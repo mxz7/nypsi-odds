@@ -4,13 +4,16 @@ import fish from "./benchmarks/fish";
 import hunt from "./benchmarks/hunt";
 import mine from "./benchmarks/mine";
 import lookForCrateItems from "./benchmarks/timetoitems";
+import { format, merge } from "./utils/format";
 
 const promises: any[] = [];
 
 async function doCrate(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  let out = await crates(10_000_000, crate);
+  const found = await Promise.all(new Array(10).fill(crates(1_000_000, crate)));
+  console.log(`merging and formatting ${crate}...`);
+  const out = format(merge(...found));
   const end = performance.now();
 
   try {
@@ -24,7 +27,9 @@ async function doCrate(crate: string) {
 async function doFish(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const out = await fish(10_000_000, crate);
+  const found = await Promise.all(new Array(10).fill(fish(1_000_000, crate)));
+  console.log(`merging and formatting ${crate}...`);
+  const out = format(merge(...found));
   const end = performance.now();
 
   try {
@@ -38,7 +43,9 @@ async function doFish(crate: string) {
 async function doHunt(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const out = await hunt(10_000_000, crate);
+  const found = await Promise.all(new Array(10).fill(hunt(1_000_000, crate)));
+  console.log(`merging and formatting ${crate}...`);
+  const out = format(merge(...found));
   const end = performance.now();
 
   try {
@@ -52,7 +59,9 @@ async function doHunt(crate: string) {
 async function doMine(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const out = await mine(10_000_000, crate);
+  const found = await Promise.all(new Array(10).fill(mine(1_000_000, crate)));
+  console.log(`merging and formatting ${crate}...`);
+  const out = format(merge(...found));
   const end = performance.now();
 
   try {
