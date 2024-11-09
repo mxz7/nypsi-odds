@@ -101,7 +101,7 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
 
       if (chosen.includes("money:") || chosen.includes("xp:")) {
         const [type, amount] = chosen.split(":");
-        found.set(`${type};${amount}`, found.has(chosen) ? found.get(chosen) + 1 : 1);
+        found.set(`${type}:${amount}`, found.has(chosen) ? found.get(chosen) + 1 : 1);
       } else {
         let amount = 1;
 
@@ -149,7 +149,7 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
 
       if (chosen.includes("money:") || chosen.includes("xp:")) {
         const [type, amount] = chosen.split(":");
-        found.set(`${type};${amount}`, found.has(chosen) ? found.get(chosen) + 1 : 1);
+        found.set(`${type}:${amount}`, found.has(chosen) ? found.get(chosen) + 1 : 1);
       } else {
         let amount = 1;
 
