@@ -24,7 +24,7 @@ async function doCrate(crate: string) {
 async function doFish(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const out = await fish(500_000, crate);
+  const out = await fish(10_000_000, crate);
   const end = performance.now();
 
   try {
@@ -38,7 +38,7 @@ async function doFish(crate: string) {
 async function doHunt(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const out = await hunt(1_000_000, crate);
+  const out = await hunt(10_000_000, crate);
   const end = performance.now();
 
   try {
@@ -52,7 +52,7 @@ async function doHunt(crate: string) {
 async function doMine(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const out = await mine(1_000_000, crate);
+  const out = await mine(10_000_000, crate);
   const end = performance.now();
 
   try {
