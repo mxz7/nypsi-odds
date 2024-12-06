@@ -1,4 +1,5 @@
 import { mkdirSync, writeFileSync } from "fs";
+import { cpus } from "os";
 import crates from "./benchmarks/crate";
 import fish from "./benchmarks/fish";
 import hunt from "./benchmarks/hunt";
@@ -11,7 +12,7 @@ const promises: any[] = [];
 async function doCrate(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const found = await Promise.all(new Array(10).fill(crates(1_000_000, crate)));
+  const found = await Promise.all(new Array(cpus().length).fill(crates(1_000_000, crate)));
   console.log(`merging and formatting ${crate}...`);
   const out = format(merge(...found));
   const end = performance.now();
@@ -27,7 +28,7 @@ async function doCrate(crate: string) {
 async function doFish(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const found = await Promise.all(new Array(10).fill(fish(1_000_000, crate)));
+  const found = await Promise.all(new Array(cpus().length).fill(fish(1_000_000, crate)));
   console.log(`merging and formatting ${crate}...`);
   const out = format(merge(...found));
   const end = performance.now();
@@ -43,7 +44,7 @@ async function doFish(crate: string) {
 async function doHunt(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const found = await Promise.all(new Array(10).fill(hunt(1_000_000, crate)));
+  const found = await Promise.all(new Array(cpus().length).fill(hunt(1_000_000, crate)));
   console.log(`merging and formatting ${crate}...`);
   const out = format(merge(...found));
   const end = performance.now();
@@ -59,7 +60,7 @@ async function doHunt(crate: string) {
 async function doMine(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const found = await Promise.all(new Array(10).fill(mine(1_000_000, crate)));
+  const found = await Promise.all(new Array(cpus().length).fill(mine(1_000_000, crate)));
   console.log(`merging and formatting ${crate}...`);
   const out = format(merge(...found));
   const end = performance.now();
