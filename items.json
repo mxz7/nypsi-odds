@@ -883,7 +883,9 @@
       "id:bob:80",
       "id:stolen_credit_card",
       "id:banana_seed:10",
-      "id:apple_seed:7"
+      "id:apple_seed:7",
+      "id:strawberry_seed:10",
+      "id:orange_seed:15"
     ]
   },
   "calendar": {
@@ -2306,7 +2308,8 @@
       "id:quarry_scrap:3",
       "id:big_tiddy_goth_gf:20",
       "id:69420_crate:40",
-      "id:banana_seed:5"
+      "id:banana_seed:5",
+      "id:fertiliser:60"
     ]
   },
   "bob": {
@@ -2529,7 +2532,7 @@
       "id:infinity_tag:70",
       "id:unbreaking:90",
       "id:highroller",
-      "id:turbo_upgrade_part:50",
+      "id:turbo_upgrade_part:75",
       "id:wheel_upgrade_part:50",
       "id:double_xp",
       "id:gem_crate:25",
@@ -2559,12 +2562,12 @@
       "id:lucky_cheese",
       "money:100000000",
       "money:69000000:90",
-      "xp:5000",
+      "xp:10000",
       "id:multi_potion",
-      "id:skyline_r34:85",
       "id:lucky_7:95",
-      "id:lamborghini:40",
-      "id:reroll_token:20"
+      "id:reroll_token:20",
+      "id:apple_seed:50",
+      "id:strawberry_seed:50"
     ]
   },
   "infinity_tag": {
@@ -2841,7 +2844,7 @@
     "name": "apple juice",
     "plural": "apple juice",
     "article": "an",
-    "aliases": ["appy joos", "appy", "joos", "juice", "apple"],
+    "aliases": ["appy joos", "joos", "juice", "appy juice", "appyjoos", "appyjuice"],
     "emoji": "🧃",
     "longDesc": "if you drink orange juice youre a massive loser",
     "rarity": 2,
@@ -3082,8 +3085,9 @@
     "plural": "apples",
     "emoji": "🍎",
     "longDesc": "the best fruit",
+    "aliases": ["appy"],
     "rarity": 0,
-    "role": "item",
+    "role": "sellable",
     "buy": 0,
     "sell": 50000,
     "in_crates": false
@@ -3116,5 +3120,75 @@
     "sell": 10000,
     "in_crates": true,
     "aliases": ["lotto", "lottery"]
+  },
+  "orange": {
+    "id": "orange",
+    "name": "orange",
+    "article": "an",
+    "plural": "oranges",
+    "emoji": "🍊",
+    "longDesc": "apples are better",
+    "rarity": 0,
+    "role": "sellable",
+    "buy": 0,
+    "sell": 30000,
+    "in_crates": false
+  },
+  "orange_seed": {
+    "id": "orange_seed",
+    "name": "orange tree seed",
+    "article": "an",
+    "plural": "orange tree seeds",
+    "emoji": "<:nypsi_banana_tree_seeds:1261357859891843132>",
+    "longDesc": "plant to grow a orange tree",
+    "rarity": 3,
+    "role": "seed",
+    "plantId": "orange_tree",
+    "buy": 0,
+    "sell": 50000,
+    "in_crates": true,
+    "aliases": ["oseed"]
+  },
+  "fertiliser": {
+    "id": "fertiliser",
+    "name": "fertiliser",
+    "article": "a",
+    "emoji": "<:fertiliser:1314233680406777947>",
+    "longDesc": "used to grow plants and keep them healthy",
+    "rarity": 0,
+    "role": "item",
+    "buy": 0,
+    "sell": 10000,
+    "in_crates": true,
+    "aliases": ["fert", "fertilizer"]
+  },
+  "strawberry": {
+    "id": "strawberry",
+    "name": "strawberry",
+    "article": "a",
+    "plural": "strawberries",
+    "emoji": "🍓",
+    "longDesc": "sweet treat",
+    "aliases": ["berry"],
+    "rarity": 0,
+    "role": "sellable",
+    "buy": 0,
+    "sell": 20000,
+    "in_crates": false
+  },
+  "strawberry_seed": {
+    "id": "strawberry_seed",
+    "name": "strawberry bush seed",
+    "article": "a",
+    "plural": "strawberry bush seeds",
+    "emoji": "<:nypsi_apple_tree_seeds:1261357859891843132>",
+    "longDesc": "plant to grow a strawberry bush",
+    "rarity": 4,
+    "role": "seed",
+    "plantId": "strawberry_bush",
+    "buy": 0,
+    "sell": 50000,
+    "in_crates": true,
+    "aliases": ["sbush"]
   }
 }
