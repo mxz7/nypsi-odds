@@ -58,10 +58,18 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
             if (chance == 7) crateItemsModified.push(i);
           } else if (items[i].rarity == 4) {
             const chance = Math.floor(Math.random() * 15);
-            if (chance == 4) crateItemsModified.push(i);
+            if (chance == 4) {
+              crateItemsModified.push(i);
+            } else if (chance > 7) {
+              for (let x = 0; x < 3; x++) {
+                crateItemsModified.push(i);
+              }
+            }
           } else if (items[i].rarity == 3) {
             const chance = Math.floor(Math.random() * 3);
-            if (chance == 2) crateItemsModified.push(i);
+            if (chance == 2) {
+              crateItemsModified.push(i);
+            }
           } else if (items[i].rarity == 2) {
             crateItemsModified.push(i);
           } else if (items[i].rarity == 1) {
