@@ -8,11 +8,19 @@ import lookForCrateItems from "./benchmarks/timetoitems";
 import { format, merge } from "./utils/format";
 
 const promises: any[] = [];
+const CPU_COUNT = cpus().length;
 
 async function doCrate(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const found = await Promise.all(new Array(cpus().length).fill(crates(1_000_000, crate)));
+
+  const promises: Promise<Map<string, number>>[] = [];
+
+  for (let i = 0; i < CPU_COUNT; i++) {
+    promises.push(crates(1_000_000, crate));
+  }
+
+  const found = await Promise.all(promises);
   console.log(`merging and formatting ${crate}...`);
   const out = format(merge(...found));
   const end = performance.now();
@@ -28,7 +36,13 @@ async function doCrate(crate: string) {
 async function doFish(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const found = await Promise.all(new Array(cpus().length).fill(fish(1_000_000, crate)));
+  const promises: Promise<Map<string, number>>[] = [];
+
+  for (let i = 0; i < CPU_COUNT; i++) {
+    promises.push(fish(1_000_000, crate));
+  }
+
+  const found = await Promise.all(promises);
   console.log(`merging and formatting ${crate}...`);
   const out = format(merge(...found));
   const end = performance.now();
@@ -44,7 +58,13 @@ async function doFish(crate: string) {
 async function doHunt(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const found = await Promise.all(new Array(cpus().length).fill(hunt(1_000_000, crate)));
+  const promises: Promise<Map<string, number>>[] = [];
+
+  for (let i = 0; i < CPU_COUNT; i++) {
+    promises.push(hunt(1_000_000, crate));
+  }
+
+  const found = await Promise.all(promises);
   console.log(`merging and formatting ${crate}...`);
   const out = format(merge(...found));
   const end = performance.now();
@@ -60,7 +80,13 @@ async function doHunt(crate: string) {
 async function doMine(crate: string) {
   console.log(`starting: ${crate}`);
   const start = performance.now();
-  const found = await Promise.all(new Array(cpus().length).fill(mine(1_000_000, crate)));
+  const promises: Promise<Map<string, number>>[] = [];
+
+  for (let i = 0; i < CPU_COUNT; i++) {
+    promises.push(mine(1_000_000, crate));
+  }
+
+  const found = await Promise.all(promises);
   console.log(`merging and formatting ${crate}...`);
   const out = format(merge(...found));
   const end = performance.now();
@@ -99,20 +125,19 @@ async function findItemsInCrate(crate: string, items: string[]) {
 // findItemsInCrate("nypsi_crate", ["goat_tag", "cat_tag"]);
 // findItemsInCrate("basic_crate", ["cat_tag", "goat_tag"]);
 
-promises.push(doCrate("vote_crate"));
 promises.push(doCrate("basic_crate"));
-// promises.push(doCrate("nypsi_crate"));
-// promises.push(doCrate("omega_crate"));
-// promises.push(doCrate("mineshaft_chest"));
-// promises.push(doCrate("workers_crate"));
-// promises.push(doCrate("boosters_crate"));
-// promises.push(doCrate("gem_crate"));
-// promises.push(doFish("terrible_fishing_rod"));
-// promises.push(doFish("fishing_rod"));
-// promises.push(doFish("incredible_fishing_rod"));
-// promises.push(doHunt("terrible_gun"));
-// promises.push(doHunt("gun"));
-// promises.push(doHunt("incredible_gun"));
-// promises.push(doMine("wooden_pickaxe"));
-// promises.push(doMine("iron_pickaxe"));
-// promises.push(doMine("diamond_pickaxe"));
+promises.push(doCrate("nypsi_crate"));
+promises.push(doCrate("omega_crate"));
+promises.push(doCrate("mineshaft_chest"));
+promises.push(doCrate("workers_crate"));
+promises.push(doCrate("boosters_crate"));
+promises.push(doCrate("gem_crate"));
+promises.push(doFish("terrible_fishing_rod"));
+promises.push(doFish("fishing_rod"));
+promises.push(doFish("incredible_fishing_rod"));
+promises.push(doHunt("terrible_gun"));
+promises.push(doHunt("gun"));
+promises.push(doHunt("incredible_gun"));
+promises.push(doMine("wooden_pickaxe"));
+promises.push(doMine("iron_pickaxe"));
+promises.push(doMine("diamond_pickaxe"));

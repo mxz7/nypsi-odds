@@ -2,7 +2,7 @@ import { readFileSync } from "fs";
 import { isMainThread, parentPort, Worker, workerData } from "worker_threads";
 import { openCrate } from "../utils/openCrate";
 
-export default function crate(amount: number, crate: string): Promise<Map<number, string>> {
+export default function crate(amount: number, crate: string): Promise<Map<string, number>> {
   return new Promise((resolve, reject) => {
     const worker = new Worker(__filename, {
       workerData: [amount, crate],
