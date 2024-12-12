@@ -105,3 +105,5 @@ bugatti_skin: 0.006% (950 found)
 turbo_upgrade_part: 0.006% (925 found)
 omega_crate: 0.000% (23 found)
 dave: 0.000% (21 found)
+cat_tag: 0.000%
+goat_tag: 0.000%
