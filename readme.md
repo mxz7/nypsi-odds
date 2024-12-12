@@ -2,7 +2,7 @@
 
 this repo shows results for [nypsi](https://github.com/mxz7/nypsi) (random) crate/fish/mine/hunt odds. results can be found in [./out/](./out/)
 
-up to date as of 8 dec 2024
+up to date as of 12 dec 2024
 
 ## results
 
@@ -24,7 +24,7 @@ up to date as of 8 dec 2024
 
 [fishing rod](./out/fishing_rod.txt)
 
-[incredible fishing rod](./out/incredible_fishing_rod.txt)
+[incredible fishing rod](./out/incredible_fishing_rod.txt)\
 
 [terrible gun](./out/terrible_gun.txt)
 

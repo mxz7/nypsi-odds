@@ -1,5 +1,6 @@
 import { readFileSync } from "fs";
 import { isMainThread, parentPort, Worker, workerData } from "worker_threads";
+import percentChance from "../utils/percentChance";
 
 export default function mine(amount: number, crate: string): Promise<Map<string, number>> {
   return new Promise((resolve, reject) => {
@@ -139,6 +140,14 @@ if (!isMainThread) {
         found.set(chosen, found.get(chosen) + 1);
       } else {
         found.set(chosen, 1);
+      }
+    }
+
+    if (percentChance(0.65)) {
+      if (found.has("stick")) {
+        found.set("stick", found.get("stick") + 1);
+      } else {
+        found.set("stick", 1);
       }
     }
 
