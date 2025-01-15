@@ -1481,13 +1481,13 @@
     "article": "an",
     "plural": "efficiencies",
     "emoji": "<a:nypsi_book:1001459250163359786>",
-    "longDesc": "enchant your pickaxe with efficiency for 30 mins (stacks to 4)",
+    "longDesc": "enchant your pickaxe with efficiency for 30 mins (stacks to 3)",
     "rarity": 2,
     "buy": 0,
     "sell": 75000,
     "role": "booster",
     "stackable": true,
-    "max": 4,
+    "max": 3,
     "boosterEffect": {
       "boosts": ["mine"],
       "effect": 1,
@@ -3153,7 +3153,8 @@
     "buy": 0,
     "sell": 50000,
     "in_crates": true,
-    "aliases": ["oseed"]
+    "aliases": ["oseed"],
+    "random_drop_chance": 20
   },
   "fertiliser": {
     "id": "fertiliser",
@@ -3338,7 +3339,8 @@
     "longDesc": "ewwwww smelly",
     "role": "collectable",
     "rarity": 1,
-    "in_crates": true
+    "in_crates": true,
+    "random_drop_chance": 10
   },
   "foot": {
     "id": "foot",
@@ -3354,5 +3356,107 @@
       "ingredients": ["toe:5"],
       "time": 3600
     }
+  },
+  "rock": {
+    "id": "rock",
+    "name": "rock",
+    "plural": "rocks",
+    "article": "a",
+    "emoji": "🪨",
+    "longDesc": "rock",
+    "rarity": 6,
+    "role": "collectable",
+    "sell": 50000000,
+    "in_crates": true,
+    "unique": true
+  },
+  "mona_lisa": {
+    "id": "mona_lisa",
+    "name": "mona lisa",
+    "plural": "mona lisas",
+    "article": "a",
+    "emoji": "<:nypsi_monalisa:1325885265817894922>",
+    "longDesc": "famous painting for real",
+    "rarity": 6,
+    "role": "collectable",
+    "sell": 50000000,
+    "in_crates": false,
+    "unique": true,
+    "random_drop_chance": 5
+  },
+  "rose": {
+    "id": "rose",
+    "name": "rose",
+    "plural": "roses",
+    "article": "a",
+    "emoji": "🌹",
+    "longDesc": "a beautiful romantic flower",
+    "rarity": 5,
+    "role": "flower",
+    "sell": 1000000,
+    "in_crates": true,
+    "random_drop_chance": 10
+  },
+  "tulip": {
+    "id": "tulip",
+    "name": "tulip",
+    "plural": "tulips",
+    "article": "a",
+    "emoji": "🌷",
+    "longDesc": "a pink flower",
+    "rarity": 5,
+    "role": "flower",
+    "sell": 1000000,
+    "in_crates": true,
+    "random_drop_chance": 5
+  },
+  "sunflower": {
+    "id": "sunflower",
+    "name": "sunflower",
+    "plural": "sunflowers",
+    "article": "a",
+    "emoji": "🌻",
+    "longDesc": "they're pretty cute i suppose",
+    "rarity": 3,
+    "role": "flower",
+    "sell": 100000,
+    "in_crates": true
+  },
+  "hibiscus": {
+    "id": "hibiscus",
+    "name": "hibiscus",
+    "plural": "hibiscus",
+    "article": "a",
+    "emoji": "🌺",
+    "longDesc": "beautiful little flower wow i love it",
+    "rarity": 5,
+    "role": "flower",
+    "sell": 100000,
+    "in_crates": true
+  },
+  "blossom": {
+    "id": "blossom",
+    "name": "blossom",
+    "plural": "blossoms",
+    "article": "a",
+    "emoji": "🌼",
+    "longDesc": "cherry is better",
+    "rarity": 4,
+    "role": "flower",
+    "sell": 100000,
+    "in_crates": true
+  },
+  "cherry_blossom": {
+    "id": "cherry_blossom",
+    "name": "cherry blossom",
+    "plural": "cherry blossoms",
+    "article": "a",
+    "emoji": "🌸",
+    "longDesc": "pretty pink",
+    "rarity": 5,
+    "role": "flower",
+    "sell": 100000,
+    "in_crates": true,
+    "random_drop_chance": 3
   }
 }

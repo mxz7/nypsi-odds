@@ -70,7 +70,7 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
             crateItemsModified.push(i);
           } else if (items[i].rarity == 1) {
             for (let x = 0; x < 2; x++) {
-              if (items[i].role == "collectable") {
+              if (items[i].role == "collectable" || items[i].role === "flower") {
                 const chance = Math.floor(Math.random() * 3);
 
                 if (chance == 2) {
@@ -83,7 +83,7 @@ export function openCrate(itemId: string, found: Map<string, number>, items: { [
             }
           } else if (items[i].rarity == 0) {
             for (let x = 0; x < 5; x++) {
-              if (items[i].role == "collectable") {
+              if (items[i].role == "collectable" || items[i].role === "flower") {
                 const chance = Math.floor(Math.random() * 3);
 
                 if (chance == 2) {
