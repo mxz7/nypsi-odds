@@ -107,15 +107,13 @@ async function findItemsInCrate(crate: string, items: string[]) {
     console.log(`still looking for ${items.join(", ")} in ${crate}... (${((Date.now() - started) / 1000).toFixed(1)}s)`);
   }, 30000);
 
-  const res = await Promise.race([
-    lookForCrateItems(crate, items),
-    lookForCrateItems(crate, items),
-    lookForCrateItems(crate, items),
-    lookForCrateItems(crate, items),
-    lookForCrateItems(crate, items),
-    lookForCrateItems(crate, items),
-    lookForCrateItems(crate, items),
-  ]);
+  const promises = [];
+
+  for (let i = 0; i < CPU_COUNT; i++) {
+    promises.push(lookForCrateItems(crate, items));
+  }
+
+  const res = await Promise.race(promises);
 
   clearInterval(interval);
 
@@ -125,17 +123,17 @@ async function findItemsInCrate(crate: string, items: string[]) {
 // findItemsInCrate("nypsi_crate", ["goat_tag", "cat_tag"]);
 // findItemsInCrate("basic_crate", ["cat_tag", "goat_tag"]);
 
-// promises.push(doCrate("basic_crate"));
+promises.push(doCrate("basic_crate"));
 promises.push(doCrate("nypsi_crate"));
-promises.push(doCrate("omega_crate"));
+// promises.push(doCrate("omega_crate"));
 // promises.push(doCrate("mineshaft_chest"));
-// promises.push(doCrate("workers_crate"));
+promises.push(doCrate("workers_crate"));
 // promises.push(doCrate("boosters_crate"));
 // promises.push(doCrate("gem_crate"));
-// promises.push(doFish("terrible_fishing_rod"));
-// promises.push(doFish("fishing_rod"));
-// promises.push(doFish("incredible_fishing_rod"));
-// promises.push(doHunt("terrible_gun"));
+promises.push(doFish("terrible_fishing_rod"));
+promises.push(doFish("fishing_rod"));
+promises.push(doFish("incredible_fishing_rod"));
+// // promises.push(doHunt("terrible_gun"));
 // promises.push(doHunt("gun"));
 // promises.push(doHunt("incredible_gun"));
 // promises.push(doMine("wooden_pickaxe"));
