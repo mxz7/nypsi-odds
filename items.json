@@ -1471,10 +1471,10 @@
     "boosterEffect": {
       "boosts": ["mine", "fish", "hunt"],
       "effect": 0.5,
-      "time": 3600
+      "time": 1800
     },
     "in_crates": true,
-    "random_drop_chance": 50,
+    "random_drop_chance": 55,
     "aliases": ["unb"]
   },
   "efficiency": {
@@ -2178,7 +2178,8 @@
       "id:reroll_token:0.05",
       "id:banana_seed:1",
       "id:fertiliser:75",
-      "id:toe:10"
+      "id:toe:10",
+      "id:unbreaking:2"
     ]
   },
   "lucky_scratch_card": {
@@ -2312,7 +2313,8 @@
       "id:double_xp:15",
       "id:multi_potion:40",
       "id:veilside_rx7_skin:10",
-      "id:stick:20"
+      "id:stick:20",
+      "id:unbreaking:10"
     ]
   },
   "corner_shop_scratchie": {
@@ -2360,7 +2362,7 @@
       "id:big_tiddy_goth_gf:20",
       "id:69420_crate:40",
       "id:banana_seed:1",
-      "id:fertiliser:45",
+      "id:fertiliser:5",
       "id:toe:50"
     ]
   },
@@ -2905,8 +2907,8 @@
     "in_crates": false,
     "boosterEffect": {
       "boosts": ["cooldown"],
-      "effect": 0.1,
-      "time": 180
+      "effect": 0.15,
+      "time": 600
     },
     "craft": {
       "ingredients": ["apple:13"],
@@ -3504,5 +3506,61 @@
     "sell": 100000,
     "in_crates": true,
     "random_drop_chance": 3
+  },
+  "mango": {
+    "id": "mango",
+    "name": "mango",
+    "article": "a",
+    "plural": "mangos",
+    "emoji": "🥭",
+    "longDesc": "the owner used to call himself a mango",
+    "rarity": 69,
+    "role": "sellable",
+    "buy": 0,
+    "sell": 60000,
+    "in_crates": false
+  },
+  "mango_seed": {
+    "id": "mango_seed",
+    "name": "mango tree seed",
+    "article": "a",
+    "plural": "mango tree seeds",
+    "emoji": "<:nypsi_apple_tree_seeds:1261357859891843132>",
+    "longDesc": "plant to grow a apple tree",
+    "rarity": 4,
+    "role": "seed",
+    "plantId": "mango_tree",
+    "buy": 0,
+    "sell": 50000,
+    "in_crates": true,
+    "aliases": ["mseed"]
+  },
+  "coconut": {
+    "id": "coconut",
+    "name": "coconut",
+    "article": "a",
+    "plural": "coconuts",
+    "emoji": "🥥",
+    "longDesc": "[i'd like to thank tori for her generous gift of $2](https://youtu.be/eRRXEWNuYy4?t=19)",
+    "rarity": 69,
+    "role": "sellable",
+    "buy": 0,
+    "sell": 40000,
+    "in_crates": false
+  },
+  "coconut_seed": {
+    "id": "coconut_seed",
+    "name": "coconut tree seed",
+    "article": "a",
+    "plural": "coconut tree seeds",
+    "emoji": "<:nypsi_apple_tree_seeds:1261357859891843132>",
+    "longDesc": "plant to grow a coconut tree",
+    "rarity": 4,
+    "role": "seed",
+    "plantId": "coconut_tree",
+    "buy": 0,
+    "sell": 50000,
+    "in_crates": true,
+    "aliases": ["mseed"]
   }
 }

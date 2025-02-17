@@ -124,10 +124,10 @@ async function findItemsInCrate(crate: string, items: string[]) {
 // findItemsInCrate("basic_crate", ["cat_tag", "goat_tag"]);
 
 promises.push(doCrate("basic_crate"));
-promises.push(doCrate("nypsi_crate"));
+// promises.push(doCrate("nypsi_crate"));
 // promises.push(doCrate("omega_crate"));
 // promises.push(doCrate("mineshaft_chest"));
-promises.push(doCrate("workers_crate"));
+// promises.push(doCrate("workers_crate"));
 // promises.push(doCrate("boosters_crate"));
 // promises.push(doCrate("gem_crate"));
 promises.push(doFish("terrible_fishing_rod"));
