@@ -529,7 +529,7 @@
     "role": "prey",
     "rarity": 0,
     "buy": 0,
-    "sell": 2500,
+    "sell": 3000,
     "in_crates": false
   },
   "normal_rabbit": {
@@ -542,7 +542,7 @@
     "role": "prey",
     "rarity": 1,
     "buy": 0,
-    "sell": 5000,
+    "sell": 6000,
     "in_crates": false
   },
   "large_rabbit": {
@@ -555,7 +555,7 @@
     "role": "prey",
     "rarity": 2,
     "buy": 0,
-    "sell": 7500,
+    "sell": 8000,
     "in_crates": false
   },
   "deer": {
@@ -568,7 +568,7 @@
     "role": "prey",
     "rarity": 2,
     "buy": 0,
-    "sell": 10000,
+    "sell": 12000,
     "in_crates": false
   },
   "llama": {
@@ -581,7 +581,7 @@
     "role": "prey",
     "rarity": 2,
     "buy": 0,
-    "sell": 12500,
+    "sell": 13000,
     "in_crates": false
   },
   "monkey": {
@@ -595,7 +595,7 @@
     "role": "prey",
     "rarity": 2,
     "buy": 0,
-    "sell": 12500,
+    "sell": 13000,
     "in_crates": false
   },
   "harambe": {
@@ -608,7 +608,7 @@
     "role": "prey",
     "rarity": 3,
     "buy": 0,
-    "sell": 20000,
+    "sell": 22500,
     "in_crates": false
   },
   "giraffe": {
@@ -621,7 +621,7 @@
     "role": "prey",
     "rarity": 3,
     "buy": 0,
-    "sell": 25000,
+    "sell": 27500,
     "in_crates": false
   },
   "lion": {
@@ -647,7 +647,7 @@
     "role": "prey",
     "rarity": 3,
     "buy": 0,
-    "sell": 25000,
+    "sell": 30000,
     "in_crates": false
   },
   "rat": {
@@ -660,7 +660,7 @@
     "role": "prey",
     "rarity": 0,
     "buy": 0,
-    "sell": 1500,
+    "sell": 2000,
     "in_crates": false
   },
   "mouse": {
@@ -673,7 +673,7 @@
     "role": "prey",
     "rarity": 0,
     "buy": 0,
-    "sell": 1250,
+    "sell": 1500,
     "in_crates": false
   },
   "kangaroo": {
@@ -738,7 +738,7 @@
     "role": "prey",
     "rarity": 3,
     "buy": 0,
-    "sell": 75000,
+    "sell": 80000,
     "in_crates": false
   },
   "ghast": {
@@ -751,7 +751,7 @@
     "role": "prey",
     "rarity": 3,
     "buy": 0,
-    "sell": 75000,
+    "sell": 80000,
     "in_crates": false
   },
   "enderman": {
@@ -764,7 +764,7 @@
     "role": "prey",
     "rarity": 5,
     "buy": 0,
-    "sell": 100000,
+    "sell": 125000,
     "in_crates": false
   },
   "mineshaft_chest": {
@@ -1461,7 +1461,7 @@
     "plural": "unbreakings",
     "article": "an",
     "emoji": "<a:nypsi_book:1001459250163359786>",
-    "longDesc": "when mining, fishing or hunting it will not reduce durability for 1 hour",
+    "longDesc": "when mining, fishing or hunting it will not reduce durability for 30 minutes",
     "rarity": 4,
     "buy": 0,
     "sell": 150000,
@@ -1474,7 +1474,7 @@
       "time": 1800
     },
     "in_crates": true,
-    "random_drop_chance": 55,
+    "random_drop_chance": 15,
     "aliases": ["unb"]
   },
   "efficiency": {
@@ -2177,7 +2177,7 @@
       "id:lucky_cheese:5",
       "id:reroll_token:0.05",
       "id:banana_seed:1",
-      "id:fertiliser:75",
+      "id:fertiliser:50",
       "id:toe:10",
       "id:unbreaking:2"
     ]
@@ -2362,7 +2362,7 @@
       "id:big_tiddy_goth_gf:20",
       "id:69420_crate:40",
       "id:banana_seed:1",
-      "id:fertiliser:5",
+      "id:fertiliser:3",
       "id:toe:50"
     ]
   },
@@ -2621,7 +2621,9 @@
       "id:lucky_7:95",
       "id:reroll_token:20",
       "id:apple_seed:50",
-      "id:strawberry_seed:50"
+      "id:strawberry_seed:50",
+      "id:mango_seed:25",
+      "id:coconut_seed:25"
     ]
   },
   "infinity_tag": {
@@ -3526,7 +3528,7 @@
     "article": "a",
     "plural": "mango tree seeds",
     "emoji": "<:nypsi_apple_tree_seeds:1261357859891843132>",
-    "longDesc": "plant to grow a apple tree",
+    "longDesc": "plant to grow a mango tree",
     "rarity": 4,
     "role": "seed",
     "plantId": "mango_tree",
