@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 import { isMainThread, parentPort, Worker, workerData } from "worker_threads";
-import { openCrate } from "../utils/openCrate";
+import { getDefaultLootPool, openCrate } from "../utils/loot_pools";
 
 export default function crate(amount: number, crate: string): Promise<Map<string, number>> {
   return new Promise((resolve, reject) => {
@@ -17,11 +17,18 @@ export default function crate(amount: number, crate: string): Promise<Map<string
 
 if (!isMainThread) {
   const items: { [key: string]: any } = JSON.parse(readFileSync("./items.json").toString());
+  const lootPools: { [key: string]: any } = JSON.parse(readFileSync("./loot_pools.json").toString());
+  lootPools.basic_crate = getDefaultLootPool(i => i.in_crates, items);
+  lootPools.basic_crate.money = { 50000: 100, 100000: 100, 500000: 100 };
+  lootPools.basic_crate.xp = { 50: 100, 100: 100, 250: 100 };
+  lootPools.workers_crate = getDefaultLootPool(i => i.role === "worker-upgrade", items);
+  lootPools.boosters_crate = getDefaultLootPool(i => i.role === "booster", items);
+
   const found = new Map<string, number>();
 
-  function run(amount: number, crate: string) {
+  async function run(amount: number, crate: string) {
     for (let i = 0; i < amount; i++) {
-      openCrate(crate, found, items);
+      await openCrate(crate, found, items, lootPools);
     }
 
     parentPort.postMessage(found);
