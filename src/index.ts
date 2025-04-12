@@ -9,6 +9,7 @@ import { format, merge } from "./utils/format";
 
 const promises: any[] = [];
 const CPU_COUNT = cpus().length;
+const ITER_COUNT = 50_000_000;
 
 async function doCrate(crate: string) {
   console.log(`starting: ${crate}`);
@@ -17,7 +18,7 @@ async function doCrate(crate: string) {
   const promises: Promise<Map<string, number>>[] = [];
 
   for (let i = 0; i < CPU_COUNT; i++) {
-    promises.push(crates(1_000_000, crate));
+    promises.push(crates(Math.floor(ITER_COUNT / CPU_COUNT), crate));
   }
 
   const found = await Promise.all(promises);
@@ -39,7 +40,7 @@ async function doFish(crate: string) {
   const promises: Promise<Map<string, number>>[] = [];
 
   for (let i = 0; i < CPU_COUNT; i++) {
-    promises.push(fish(1_000_000, crate));
+    promises.push(fish(Math.floor(ITER_COUNT / CPU_COUNT), crate));
   }
 
   const found = await Promise.all(promises);
@@ -61,7 +62,7 @@ async function doHunt(crate: string) {
   const promises: Promise<Map<string, number>>[] = [];
 
   for (let i = 0; i < CPU_COUNT; i++) {
-    promises.push(hunt(1_000_000, crate));
+    promises.push(hunt(Math.floor(ITER_COUNT / CPU_COUNT), crate));
   }
 
   const found = await Promise.all(promises);
@@ -83,7 +84,7 @@ async function doMine(crate: string) {
   const promises: Promise<Map<string, number>>[] = [];
 
   for (let i = 0; i < CPU_COUNT; i++) {
-    promises.push(mine(1_000_000, crate));
+    promises.push(mine(Math.floor(ITER_COUNT / CPU_COUNT), crate));
   }
 
   const found = await Promise.all(promises);
@@ -130,12 +131,12 @@ promises.push(doCrate("mineshaft_chest"));
 promises.push(doCrate("workers_crate"));
 promises.push(doCrate("boosters_crate"));
 promises.push(doCrate("gem_crate"));
-// promises.push(doFish("terrible_fishing_rod"));
-// promises.push(doFish("fishing_rod"));
-// promises.push(doFish("incredible_fishing_rod"));
-// promises.push(doHunt("terrible_gun"));
-// promises.push(doHunt("gun"));
-// promises.push(doHunt("incredible_gun"));
-// promises.push(doMine("wooden_pickaxe"));
-// promises.push(doMine("iron_pickaxe"));
-// promises.push(doMine("diamond_pickaxe"));
+promises.push(doFish("terrible_fishing_rod"));
+promises.push(doFish("fishing_rod"));
+promises.push(doFish("incredible_fishing_rod"));
+promises.push(doHunt("terrible_gun"));
+promises.push(doHunt("gun"));
+promises.push(doHunt("incredible_gun"));
+promises.push(doMine("wooden_pickaxe"));
+promises.push(doMine("iron_pickaxe"));
+promises.push(doMine("diamond_pickaxe"));
